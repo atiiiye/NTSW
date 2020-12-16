@@ -1,10 +1,14 @@
 import './css/test.css'
 
+//import Routes
+import PrivateRoute from "./Routes/PrivateRoute ";
+import PublicRoute from "./Routes/PublicRoute";
+import { Redirect, Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -13,7 +17,6 @@ function App() {
         >
       سامانه جامع تجارت ایران
         </a>
-      </header>
     </div>
   );
 }

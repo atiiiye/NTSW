@@ -1,6 +1,37 @@
 //import global variable or styles
 @import './fonts';
 
+//common color
+$color-black : #000000;
+$color-white : #ffffff;
+
+//blue
+$color-blue-dark-1 : #040E27;
+$color-blue-dark-2 : #0d2d3e;
+$color-blue-dark-3 : #121212;
+$color-blue-dark-4 : #001D38;
+$color-blue-dark-5 : #000839;
+$color-blue-dark-6 : #001d4a;
+
+//pink
+$color-pink-1 : #FF4A52;
+$color-pink-2 : #ff2143;
+$color-pink-3 : #ce0f3d;
+$color-pink-4 : #c70d3a;
+
+//gray
+$color-light-1 : #f7f7f7;
+$color-light-2 : #dadada;
+$color-light-3:#b0b0b2;
+$color-light-4:#959aa2;
+$color-light-5:#777;
+
+//وزارت نفت
+$color-blue-dark-naft-1 : #05214b;
+$color-blue-dark-naft-2 : #062d66;
+$color-blue-dark-naft-3 : #315492;
+$color-pink-naft : #ca2221;
+$color-light-naft : #eeeeee;
 
 body {
     direction: rtl;
@@ -8,3 +39,19 @@ body {
     font-family: Vazir;
 }
 
+@mixin flex-box-default() {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@mixin flex-box-column() {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
