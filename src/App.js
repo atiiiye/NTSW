@@ -5,19 +5,15 @@ import PrivateRoute from "./Routes/PrivateRoute ";
 import PublicRoute from "./Routes/PublicRoute";
 import { Redirect, Route, Switch } from "react-router-dom";
 
+//components
+import SelectRole from './Components/SelectRole/SelectRole';
+
 
 function App() {
   return (
-    <div className="App">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-      سامانه جامع تجارت ایران
-        </a>
-    </div>
+    <switch>
+      <Route exact path="/select-role" component={SelectRole}/>
+    </switch>
   );
 }
 
