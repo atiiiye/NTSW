@@ -5,15 +5,18 @@ import PrivateRoute from "./Routes/PrivateRoute ";
 import PublicRoute from "./Routes/PublicRoute";
 import { Redirect, Route, Switch } from "react-router-dom";
 
+// import packages
+import "font-awesome/css/font-awesome.min.css";
+
 //components
 import SelectRole from './Components/SelectRole/SelectRole';
 
 
 function App() {
   return (
-    <switch>
+    <Switch>
       <Route exact path="/select-role" component={SelectRole}/>
-    </switch>
+    </Switch>
   );
 }
 

@@ -44,14 +44,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 @mixin flex-box-column() {
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+}
 
+.container {
+    @include flex-box-column ;
+    max-width: 1360px;
+    padding: 2rem;
 }

@@ -1,0 +1,74 @@
+@import 'base';
+
+.contents {
+    width: 100%;
+    margin-bottom: 3rem;
+    @include flex-box-column();
+
+    .descriptionBox {
+        text-align: center;
+        @include flex-box-column();
+
+        h3 {
+            width: 100%;
+            margin-bottom: 2.5rem;
+
+        }
+
+        span {
+            width: 100%;
+            line-height: 1.7rem;
+            text-align: right;
+            color: $color-light-5;
+        }
+    }
+
+    .formGroup {
+        margin-top: 2rem;
+        text-align: right;
+        width: 60%;
+
+        label {
+            // color: $color-light-5;
+            font-size: 95%;
+        }
+
+        select {
+            &:focus {
+                border-color: $color-light-4;
+                box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+            }
+        }
+
+    }
+}
+
+.button {
+    width: 35%;
+    font-size: 100%;
+    background-color: $color-pink-4 !important;
+    color: $color-white;
+    border: none;
+    
+    &:focus , &:active {
+        box-shadow: 0 0 .2rem .05rem rgba($color: $color-pink-4, $alpha: .7) !important;
+        border: 1px solid $color-pink-4 !important;
+    }
+    // &:hover{
+        
+    //     border: 1px solid $color-pink-4;
+    // }
+}
+
+.buttonBack {
+    font-size: 90%;
+    background-color: $color-blue-dark-6 !important;
+
+    @include flex-box-default;
+
+    i {
+        padding: 0 .5rem;
+        font-size: 20px;
+    }
+
+}

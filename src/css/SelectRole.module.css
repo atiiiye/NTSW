@@ -60,4 +60,74 @@ body {
   max-width: 1360px;
   padding: 2rem;
 }
-/*# sourceMappingURL=test.css.map */
+
+.contents {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contents .descriptionBox {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contents .descriptionBox h3 {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.contents .descriptionBox span {
+  width: 100%;
+  line-height: 1.7rem;
+  text-align: right;
+  color: #777;
+}
+
+.contents .formGroup {
+  margin-top: 2rem;
+  text-align: right;
+  width: 60%;
+}
+
+.contents .formGroup label {
+  font-size: 95%;
+}
+
+.contents .formGroup select:focus {
+  border-color: #959aa2;
+  box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
+}
+
+.button {
+  width: 35%;
+  font-size: 100%;
+  background-color: #c70d3a !important;
+  color: #ffffff;
+  border: none;
+}
+
+.button:focus, .button:active {
+  box-shadow: 0 0 0.2rem 0.05rem rgba(199, 13, 58, 0.7) !important;
+  border: 1px solid #c70d3a !important;
+}
+
+.buttonBack {
+  font-size: 90%;
+  background-color: #001d4a !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonBack i {
+  padding: 0 .5rem;
+  font-size: 20px;
+}
+/*# sourceMappingURL=SelectRole.module.css.map */
