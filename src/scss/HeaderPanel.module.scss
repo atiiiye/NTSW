@@ -1,0 +1,20 @@
+@import 'base';
+
+.navbar {
+    background-attachment: fixed;
+    background-color: $color-blue-dark-6;
+    padding: 0;
+    height: 55px;
+
+    @include flex-box-default;
+
+    .navbarMenuWrapper {
+        @include flex-box-default;
+        height: 100%;
+        width: 100%;
+
+        .navbarMenuWrapperRight {
+            width: 50%;
+        }
+    }
+}

@@ -60,4 +60,26 @@ body {
   max-width: 1360px;
   padding: 2rem;
 }
-/*# sourceMappingURL=test.css.map */
+
+.navbar {
+  background-attachment: fixed;
+  background-color: #001d4a;
+  padding: 0;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navbarMenuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar .navbarMenuWrapper .navbarMenuWrapperRight {
+  width: 50%;
+}
+/*# sourceMappingURL=HeaderPanel.module.css.map */

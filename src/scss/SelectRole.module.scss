@@ -12,7 +12,6 @@
         h3 {
             width: 100%;
             margin-bottom: 2.5rem;
-
         }
 
         span {
@@ -22,6 +21,12 @@
             color: $color-light-5;
         }
     }
+}
+
+
+form {
+    width: 100%;
+    @include flex-box-column();
 
     .formGroup {
         margin-top: 2rem;
@@ -39,35 +44,47 @@
                 box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
             }
         }
+    }
 
+    .button {
+        width: 35%;
+        font-size: 100%;
+        background-color: $color-pink-4 !important;
+        color: $color-white;
+        border: none;
+
+        &:focus,
+        &:active {
+            box-shadow: 0 0 0 .2rem rgba($color: $color-pink-4, $alpha: .5) !important;
+            border: none !important;
+        }
     }
 }
 
-.button {
-    width: 35%;
-    font-size: 100%;
-    background-color: $color-pink-4 !important;
-    color: $color-white;
-    border: none;
-    
-    &:focus , &:active {
-        box-shadow: 0 0 .2rem .05rem rgba($color: $color-pink-4, $alpha: .7) !important;
-        border: 1px solid $color-pink-4 !important;
-    }
-    // &:hover{
-        
-    //     border: 1px solid $color-pink-4;
-    // }
-}
-
-.buttonBack {
+.HomeLink {
     font-size: 90%;
-    background-color: $color-blue-dark-6 !important;
+    background-color: $color-light-4 !important;
+    border: none;
+    text-decoration: none !important;
+    color: $color-white;
+    padding: .5rem;
+    border-radius: 4px;
 
+    &:hover{
+        color: $color-black !important;
+    }
+
+     &:focus,
+    &:active {
+        box-shadow: 0 0 0 .2rem rgba($color: $color-light-4, $alpha: .5) !important;
+        border: none !important;
+        text-decoration: none;
+        color: $color-black !important;
+    }
     @include flex-box-default;
 
     i {
-        padding: 0 .5rem;
+        padding: 0 .2rem;
         font-size: 20px;
     }
 
