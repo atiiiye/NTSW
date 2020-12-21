@@ -63,11 +63,12 @@ body {
 
 .contents {
   width: 100%;
-  margin-bottom: 3rem;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .contents .descriptionBox {
@@ -90,7 +91,7 @@ body {
   color: #777;
 }
 
-form {
+.contents form {
   width: 100%;
   display: flex;
   align-items: center;
@@ -98,22 +99,22 @@ form {
   flex-direction: column;
 }
 
-form .formGroup {
+.contents form .formGroup {
   margin-top: 2rem;
   text-align: right;
   width: 60%;
 }
 
-form .formGroup label {
+.contents form .formGroup label {
   font-size: 95%;
 }
 
-form .formGroup select:focus {
+.contents form .formGroup select:focus {
   border-color: #959aa2;
   box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
 }
 
-form .button {
+.contents form .button {
   width: 35%;
   font-size: 100%;
   background-color: #c70d3a !important;
@@ -121,12 +122,12 @@ form .button {
   border: none;
 }
 
-form .button:focus, form .button:active {
+.contents form .button:focus, .contents form .button:active {
   box-shadow: 0 0 0 0.2rem rgba(199, 13, 58, 0.5) !important;
   border: none !important;
 }
 
-.HomeLink {
+.contents .HomeLink {
   font-size: 90%;
   background-color: #959aa2 !important;
   border: none;
@@ -134,23 +135,25 @@ form .button:focus, form .button:active {
   color: #ffffff;
   padding: .5rem;
   border-radius: 4px;
+  width: 25%;
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.HomeLink:hover {
+.contents .HomeLink:hover {
   color: #000000 !important;
 }
 
-.HomeLink:focus, .HomeLink:active {
+.contents .HomeLink:focus, .contents .HomeLink:active {
   box-shadow: 0 0 0 0.2rem rgba(149, 154, 162, 0.5) !important;
   border: none !important;
   text-decoration: none;
   color: #000000 !important;
 }
 
-.HomeLink i {
+.contents .HomeLink i {
   padding: 0 .2rem;
   font-size: 20px;
 }

@@ -28,7 +28,7 @@ const HeaderPanel = () => {
               />
             </Button>
           </div>
-          <div className="navbar-menu-wrapper-left">
+          <div className={styles.navbarMenuWrapperLeft}>
             <NavLink to="#">
               <i class="fas fa-cogs" />
               مدیریت حساب کاربری

@@ -12,9 +12,45 @@
         @include flex-box-default;
         height: 100%;
         width: 100%;
+        padding: .5rem;
 
         .navbarMenuWrapperRight {
             width: 50%;
+            height: 100%;
+            @include flex-box-default;
+            justify-content: flex-start;
+
+            img {
+                height: 95%;
+                width: 25%;
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        .navbarMenuWrapperLeft {
+            @include flex-box-default;
+            justify-content: flex-end;
+            width: 50%;
+            height: 100%;
+            justify-content: space-around;
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+                font-size: 95%;
+
+
+                i {
+                    margin-left: .5rem;
+                    color: $color-white;
+                }
+            }
+
         }
     }
 }

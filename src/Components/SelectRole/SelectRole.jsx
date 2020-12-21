@@ -75,12 +75,12 @@ const SelectRole = () => {
               ورود
             </Button>
           </Form>
-        </div>
-
         <NavLink to="/" className={styles.HomeLink}>
           <i className="fa fa-home" />
           بازگشت به صفحه اصلی
         </NavLink>
+        </div>
+
       </div>
     </React.Fragment>
   );

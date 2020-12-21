@@ -2,8 +2,10 @@
 
 .contents {
     width: 100%;
-    margin-bottom: 3rem;
+    height: 450px;
+    // margin-bottom: 3rem;
     @include flex-box-column();
+    justify-content: space-around;
 
     .descriptionBox {
         text-align: center;
@@ -21,71 +23,73 @@
             color: $color-light-5;
         }
     }
-}
 
+    form {
+        width: 100%;
+        @include flex-box-column();
 
-form {
-    width: 100%;
-    @include flex-box-column();
+        .formGroup {
+            margin-top: 2rem;
+            text-align: right;
+            width: 60%;
 
-    .formGroup {
-        margin-top: 2rem;
-        text-align: right;
-        width: 60%;
+            label {
+                // color: $color-light-5;
+                font-size: 95%;
+            }
 
-        label {
-            // color: $color-light-5;
-            font-size: 95%;
+            select {
+                &:focus {
+                    border-color: $color-light-4;
+                    box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+                }
+            }
         }
 
-        select {
-            &:focus {
-                border-color: $color-light-4;
-                box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+        .button {
+            width: 35%;
+            font-size: 100%;
+            background-color: $color-pink-4 !important;
+            color: $color-white;
+            border: none;
+
+            &:focus,
+            &:active {
+                box-shadow: 0 0 0 .2rem rgba($color: $color-pink-4, $alpha: .5) !important;
+                border: none !important;
             }
         }
     }
 
-    .button {
-        width: 35%;
-        font-size: 100%;
-        background-color: $color-pink-4 !important;
-        color: $color-white;
+    .HomeLink {
+        font-size: 90%;
+        background-color: $color-light-4 !important;
         border: none;
+        text-decoration: none !important;
+        color: $color-white;
+        padding: .5rem;
+        border-radius: 4px;
+        width: 25%;
+        margin-top: 3rem;
+
+        @include flex-box-default;
+
+        &:hover {
+            color: $color-black !important;
+        }
 
         &:focus,
         &:active {
-            box-shadow: 0 0 0 .2rem rgba($color: $color-pink-4, $alpha: .5) !important;
+            box-shadow: 0 0 0 .2rem rgba($color: $color-light-4, $alpha: .5) !important;
             border: none !important;
+            text-decoration: none;
+            color: $color-black !important;
         }
+
+        i {
+            padding: 0 .2rem;
+            font-size: 20px;
+        }
+
     }
-}
-
-.HomeLink {
-    font-size: 90%;
-    background-color: $color-light-4 !important;
-    border: none;
-    text-decoration: none !important;
-    color: $color-white;
-    padding: .5rem;
-    border-radius: 4px;
-
-    &:hover{
-        color: $color-black !important;
-    }
-
-     &:focus,
-    &:active {
-        box-shadow: 0 0 0 .2rem rgba($color: $color-light-4, $alpha: .5) !important;
-        border: none !important;
-        text-decoration: none;
-        color: $color-black !important;
-    }
-    @include flex-box-default;
-
-    i {
-        padding: 0 .2rem;
-        font-size: 20px;
-    }
-
 }
