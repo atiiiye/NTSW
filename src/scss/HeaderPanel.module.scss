@@ -10,44 +10,68 @@
 
     .navbarMenuWrapper {
         @include flex-box-default;
+        // justify-content: space-around;
         height: 100%;
-        width: 100%;
-        padding: .5rem;
+        width: 98%;
+        padding: .5rem 0;
 
         .navbarMenuWrapperRight {
-            width: 50%;
+            width: 75%;
             height: 100%;
             @include flex-box-default;
             justify-content: flex-start;
 
             img {
-                height: 95%;
-                width: 25%;
+                height: 100%;
+                width: 20%;
             }
 
             button {
                 background-color: transparent;
                 border: none;
                 box-shadow: none;
+                padding: 0 .5rem;
+
+                &:focus,
+                &:active {
+                    background-color: transparent;
+                    border-color: none;
+                    box-shadow: 0 0 0 0 transparent !important;
+                    border-color: transparent;
+
+                    color: $color-light-2;
+                }
+
+                svg {
+                    font-size: 1.8rem;
+                }
             }
         }
 
         .navbarMenuWrapperLeft {
             @include flex-box-default;
-            justify-content: flex-end;
-            width: 50%;
+            width: 25%;
             height: 100%;
             justify-content: space-around;
 
             a {
                 color: $color-white;
                 text-decoration: none;
-                font-size: 95%;
+                font-size: 85%;
+                @include flex-box-default;
 
+                &:focus {
+                    outline: none;
+                    color: $color-light-2;
+                }
 
                 i {
-                    margin-left: .5rem;
                     color: $color-white;
+                    // font-size: 14px;
+
+                    &:active {
+                        color: $color-light-2;
+                    }
                 }
             }
 
