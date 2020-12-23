@@ -19,84 +19,136 @@ import { NavLink } from "react-router-dom";
 
 const SidebarPanel = (collapsed, handleToggleSidebar, toggled) => {
   const menuItems = [
-    // {
-    //   level_1: "صفحه اصلی",
-    //   icon: <i className="fa fa-home" />,
-    //   id: "toggler1",
-    //   level_2: [""],
-    // },
     {
-      level_1: "عملیات پایه",
+      level_1: { title: "عملیات پایه" },
       icon: <i className="menu-icon fa fa-bar-chart-o" />,
       id: "toggler2",
-      level_2: ["مدیریت نمایندگان", "مدیریت کارتابل", "بارگذاری صلاحیت ها"],
+      level_2: [
+        { title: "مدیریت نمایندگان", sub: false },
+        { title: "مدیریت کارتابل", sub: false },
+        { title: "بارگذاری صلاحیت ها", sub: false }
+      ],
     },
     {
-      level_1: "عملیات شناسه کالا",
+      level_1: { title: "عملیات شناسه کالا" },
       icon: <i className="menu-icon fa fa-cubes" />,
       id: "toggler3",
       level_2: [
-        "فهرست کالاهای وارداتی",
-        "درخواستهای در گردش",
-        "کالاهای منتخب من",
-        "جستوجوی کالا",
+        { title: "فهرست کالاهای وارداتی", sub: false },
+        { title: "درخواستهای در گردش", sub: false },
+        { title: "کالاهای منتخب من", sub: false },
+        { title: "جستوجوی کالا", sub: false },
       ],
     },
     {
-      level_1: "عملیات تجارت خارجی",
+      level_1: { title: "عملیات تجارت خارجی" },
       icon: <i className="menu-icon fa fa-refresh" />,
       id: "toggler4",
       level_2: [
-        "مدیریت پرونده های ثبت آماری ورود موقت",
-        "مدیریت فروشندگان خارجی",
-        "مدیریت پرونده ثبت سفارش",
-        "مدیریت مجوز ها",
-        "کالاهای دارای تاییدیه خدمات پس از فروش",
+        { title: "مدیریت پرونده های ثبت آماری ورود موقت", sub: false },
+        { title: "مدیریت فروشندگان خارجی", sub: false },
+        { title: "مدیریت پرونده ثبت سفارش", sub: false },
+        { title: "مدیریت مجوز ها", sub: false },
+        { title: "کالاهای دارای تاییدیه خدمات پس از فروش", sub: false },
       ],
     },
     {
-      level_1: "عملیات ارزی",
+      level_1: { title: "عملیات ارزی" },
       icon: <i className="menu-icon fa fa-user-plus" />,
       id: "toggler5",
       level_2: [
-        "مدیریت عملیات ارزی بانکی",
-        "مدیریت عملیات ارزی غیر بانکی",
-        "مدیریت ارز حاصل از صادرات",
-        "پرونده های بدون انتقال ارز",
-        "مشاهده اطلاعات ارزی",
-        // [
-        //   {
-        //     level_3: ["خرید ارز", "تعیین منشا ارز"],
-        //   },
-        // ],
+        {
+          title: "مدیریت عملیات ارزی بانکی",
+          sub: true,
+          level_3: [
+            {
+              title: "خرید ارز"
+            }, {
+              title: "تعیین منشا ارز"
+            }
+          ]
+        },
+        {
+          title: "مدیریت عملیات ارزی غیر بانکی",
+          sub: false,
+        },
+        {
+          title: "مدیریت ارز حاصل از صادرات",
+          sub: true,
+          level_3: [
+            { title: "فروش ارز" },
+            { title: "واگذاری ارز" },
+            { title: "درگاه ثبت پروانه های صادراتی عراق و افغانستان" },
+          ]
+        },
+        {
+          title: "پرونده های بدون انتقال ارز",
+          sub: true,
+          level_3: [
+            { title: "تعیین منشا ارز" }
+          ]
+        },
+        {
+          title: "مشاهده اطلاعات ارزی",
+          sub: false
+        },
+
       ],
     },
     {
-      level_1: "عملیات لجستیک خارجی",
+      level_1: { title: "عملیات لجستیک خارجی" },
       icon: <i className="menu-icon fa fa-edit" />,
       id: "toggler6",
-      level_2: ["مدیریت بارنامه های بین الملل"],
+      level_2: [
+        {
+          title: "مدیریت بارنامه های بین الملل",
+          sub: false
+        }
+      ],
     },
     {
-      level_1: "عملیات شناسه رهگیری",
+      level_1: { title: "عملیات شناسه رهگیری" },
       icon: <i className="menu-icon fa fa-qrcode" />,
       id: "toggler7",
-      level_2: ["استعلام تجهیزات دارای سیم کارت"],
+      level_2: [
+        { title: "استعلام تجهیزات دارای سیم کارت", sub: false },
+
+      ],
     },
     {
-      level_1: "عملیات گمرکی",
+      level_1: { title: "عملیات گمرکی" },
       icon: <i className="menu-icon fa fa-check" />,
       id: "toggler8",
-      level_2: ["مدیریت اظهارنامه گمرکی", "مشاهده سابقه واردات کالا"],
+      level_2: [
+        {
+          title: "مدیریت اظهارنامه گمرکی",
+          sub: true,
+          level_3: [
+            { title: "مدیریت اظهارنامه واردات" },
+            { title: "مدیریت اظهارنامه صادرات" }
+          ]
+        },
+        { title: "مشاهده سابقه واردات کالا", }],
     },
     {
-      level_1: "عملیات رتبه بندی و مالی",
+      level_1: { title: "عملیات رتبه بندی و مالی" },
       icon: <i className="menu-icon fa fa-bar-chart-o" />,
       id: "toggler9",
       level_2: [
-        "مدیرییت رتبه بندی",
-        "استفاده مجدد از سقف واردات",
-        "مدیریت صورت های مالی",
+        {
+          title: "مدیرییت رتبه بندی",
+          sub: false,
+
+        },
+        {
+          title: "استفاده مجدد از سقف واردات",
+          sub: false,
+
+        },
+        {
+          title: "مدیریت صورت های مالی",
+          sub: false,
+        }
       ],
     },
   ];
@@ -119,23 +171,42 @@ const SidebarPanel = (collapsed, handleToggleSidebar, toggled) => {
           rtl={true}
           toggled={toggled}
           onToggle={handleToggleSidebar}
-          // collapsed={collapsed}
+        // collapsed={collapsed}
         >
           <Menu iconShape="circle">
             <MenuItem icon={<i className="fa fa-home" />}>صفحه اصلی</MenuItem>
 
             {menuItems.map((item) => (
-              <SubMenu title={item.level_1} icon={item.icon}>
-                {item.level_2.map((item_2) => (
-                  <NavLink to="#"><MenuItem>{item_2}</MenuItem></NavLink>
-                ))}
-                <SubMenu>
-                  {/* {item_2.Level_3.map((item_3) => (
-                              // {console.log(item_3)}
-                             <MenuItem><NavLink>{item_3}</NavLink></MenuItem> 
-                            ))} */}
+              <React.Fragment>
+
+                <SubMenu title={item.level_1.title} icon={item.icon}>
+                  {console.log("item :", item)}
+                  {item.level_2.map((item_2) => (
+                    <React.Fragment>
+
+                      <NavLink to="#">
+                        {console.log("item_2:", item_2)}
+                        <MenuItem>{item_2.title}</MenuItem>
+                      </NavLink>
+                      <SubMenu>
+                        (
+                        item_2.sub ?
+                            {
+                          item_2.Level_3.map((item_3) => (
+                            < NavLink>
+                              {console.log('item_3 :', item_3)}
+                              <MenuItem>{item_3.title}</MenuItem>
+                            </ NavLink>
+                          ))
+                        }
+                            : return null
+                  )
+                      </SubMenu>
+                    </React.Fragment>
+                  ))}
+
                 </SubMenu>
-              </SubMenu>
+              </React.Fragment>
             ))}
           </Menu>
         </ProSidebar>
