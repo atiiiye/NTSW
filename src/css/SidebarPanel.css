@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir.eot");
+  src: url("./../fonts/Vazir.eot") format("embedded-opentype"), url("./../fonts/Vazir.woff2") format("woff2"), url("./../fonts/Vazir.woff") format("woff"), url("./../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Bold.eot");
+  src: url("./../fonts/Vazir-Bold.eot") format("embedded-opentype"), url("./../fonts/Vazir-Bold.woff2") format("woff2"), url("./../fonts/Vazir-Bold.woff") format("woff"), url("./../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Black.eot");
+  src: url("./../fonts/Vazir-Black.eot") format("embedded-opentype"), url("./../fonts/Vazir-Black.woff2") format("woff2"), url("./../fonts/Vazir-Black.woff") format("woff"), url("./../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Medium.eot");
+  src: url("./../fonts/Vazir-Medium.eot") format("embedded-opentype"), url("./../fonts/Vazir-Medium.woff2") format("woff2"), url("./../fonts/Vazir-Medium.woff") format("woff"), url("./../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Light.eot");
+  src: url("./../fonts/Vazir-Light.eot") format("embedded-opentype"), url("./../fonts/Vazir-Light.woff2") format("woff2"), url("./../fonts/Vazir-Light.woff") format("woff"), url("./../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Thin.eot");
+  src: url("./../fonts/Vazir-Thin.eot") format("embedded-opentype"), url("./../fonts/Vazir-Thin.woff2") format("woff2"), url("./../fonts/Vazir-Thin.woff") format("woff"), url("./../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  direction: rtl;
+  font-size: 100%;
+  font-family: Vazir;
+  background-color: #b0b0b2;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1360px;
+  padding: 2rem;
+}
+
+div.sidebar-brand-wrapper {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar {
+  width: 100%;
+  color: #ffffff;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner {
+  background-color: #ffffff;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout {
+  overflow-y: unset;
+  overflow-x: unset;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle {
+  padding: 1rem 0;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul {
+  margin-bottom: 1rem;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item {
+  font-size: 90%;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item {
+  padding: .5rem .5rem .5rem 2.2rem;
+  align-items: center;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item::before,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item::before {
+  width: 5px;
+  height: 5px;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item span.pro-icon-wrapper,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item span.pro-icon-wrapper {
+  background-color: #001d4a;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item span.pro-icon-wrapper span.pro-icon i,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item span.pro-icon-wrapper span.pro-icon i {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item span.pro-item-content,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item span.pro-item-content {
+  font-size: 95%;
+  color: #000000;
+  margin-right: .5rem;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item span.pro-arrow-wrapper,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item span.pro-arrow-wrapper {
+  position: absolute;
+  left: 20px;
+  right: auto;
+  top: 30%;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item span.pro-arrow-wrapper span.pro-arrow,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item span.pro-arrow-wrapper span.pro-arrow {
+  border-color: #000000;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.react-slidedown.pro-inner-list-item,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.react-slidedown.pro-inner-list-item {
+  background-color: transparent;
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.react-slidedown.pro-inner-list-item div ul li.pro-menu-item div.pro-inner-item span.pro-item-content,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.react-slidedown.pro-inner-list-item div ul li.pro-menu-item div.pro-inner-item span.pro-item-content {
+  font-size: 90%;
+}
+
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.react-slidedown.pro-inner-list-item div ul li.pro-menu-item div.pro-inner-item span.pro-item-content a,
+div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.react-slidedown.pro-inner-list-item div ul li.pro-menu-item div.pro-inner-item span.pro-item-content a {
+  color: #000000;
+}
+/*# sourceMappingURL=SidebarPanel.css.map */

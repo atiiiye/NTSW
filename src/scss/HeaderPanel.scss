@@ -1,6 +1,6 @@
 @import 'base';
 
-.navbar {
+nav.navbar {
     background-attachment: fixed;
     background-color: $color-blue-dark-6;
     padding: 0;
@@ -8,22 +8,22 @@
 
     @include flex-box-default;
 
-    .navbarMenuWrapper {
+    div.navbar-menu-wrapper {
         @include flex-box-default;
         // justify-content: space-around;
         height: 100%;
         width: 98%;
         padding: .5rem 0;
 
-        .navbarMenuWrapperRight {
-            width: 75%;
+        div.navbar-menu-wrapper-right {
+            width: 70%;
             height: 100%;
             @include flex-box-default;
             justify-content: flex-start;
 
             img {
                 height: 100%;
-                width: 20%;
+                width: 18%;
             }
 
             button {
@@ -48,33 +48,38 @@
             }
         }
 
-        .navbarMenuWrapperLeft {
+        div.navbar-menu-wrapper-left {
             @include flex-box-default;
-            width: 25%;
+            width: 30%;
             height: 100%;
-            justify-content: space-around;
+            justify-content: flex-end;
 
-            a {
-                color: $color-white;
-                text-decoration: none;
-                font-size: 85%;
-                @include flex-box-default;
+            div {
+                width: 75%;
+                display: flex;
+                justify-content: space-around;
 
-                &:focus {
-                    outline: none;
-                    color: $color-light-2;
-                }
-
-                i {
+                a {
                     color: $color-white;
-                    // font-size: 14px;
+                    text-decoration: none;
+                    font-size: 85%;
+                    @include flex-box-default;
 
-                    &:active {
+                    &:focus {
+                        outline: none;
                         color: $color-light-2;
+                    }
+
+                    i {
+                        color: $color-white;
+                        // font-size: 14px;
+
+                        &:active {
+                            color: $color-light-2;
+                        }
                     }
                 }
             }
-
         }
     }
 }
