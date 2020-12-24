@@ -9,11 +9,12 @@
     div.sidebar-brand-wrapper {
         width: 15%;
         height: 100%;
+        position: fixed;
         @include flex-box-column;
 
         div.pro-sidebar {
             width: 100%;
-            color: $color-white ;
+            // color: $color-white ;
 
             div.pro-sidebar-inner {
                 background-color: $color-white;

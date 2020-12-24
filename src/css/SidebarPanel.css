@@ -65,6 +65,7 @@ body {
 div.sidebar-brand-wrapper {
   width: 15%;
   height: 100%;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +74,6 @@ div.sidebar-brand-wrapper {
 
 div.sidebar-brand-wrapper div.pro-sidebar {
   width: 100%;
-  color: #ffffff;
 }
 
 div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner {
