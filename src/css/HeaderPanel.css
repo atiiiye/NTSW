@@ -50,7 +50,7 @@ body {
   direction: rtl;
   font-size: 100%;
   font-family: Vazir;
-  background-color: #f7f7f7;
+  background-color: #b0b0b2;
 }
 
 .container {
@@ -124,7 +124,7 @@ nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left {
 }
 
 nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div {
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }

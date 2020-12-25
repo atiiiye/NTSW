@@ -37,7 +37,7 @@ body {
     direction: rtl;
     font-size: 100%;
     font-family: Vazir;
-    background-color: $color-light-1;
+    background-color: $color-light-3;
 }
 
 @mixin flex-box-default() {
@@ -48,7 +48,7 @@ body {
 }
 
 @mixin flex-box-column() {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-    @include flex-box-column ;
+    @include flex-box-column;
     max-width: 1360px;
     padding: 2rem;
 }

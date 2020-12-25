@@ -9,7 +9,7 @@ import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 function SidebarItem({ item }) {
     // console.log(item)
     const [collapsed, setCollapsed] = React.useState(true);
-    const { items , title} = item;
+    const { items, title } = item;
 
     function toggleCollapse() {
         setCollapsed(prevValue => !prevValue);
@@ -51,14 +51,15 @@ function Sidebar({ items }) {
         <ProSidebar>
             <Menu iconShape="circle">
                 {/* <List> */}
-                    <SubMenu >
+                <SubMenu >
                     {items.map((sidebarItem, index) => (
-                            <SidebarItem
-                                key={`${sidebarItem.title}${index}`}
-                                item={sidebarItem}
-                            />
-                            ))}
-                    </SubMenu>
+                        <SidebarItem
+                            key={`${index}`}
+                            item={sidebarItem}
+                            icon={sidebarItem.icon}
+                        />
+                    ))}
+                </SubMenu>
 
                 {/* </List> */}
 

@@ -50,7 +50,7 @@ body {
   direction: rtl;
   font-size: 100%;
   font-family: Vazir;
-  background-color: #f7f7f7;
+  background-color: #b0b0b2;
 }
 
 .container {
@@ -63,9 +63,8 @@ body {
 }
 
 div.sidebar-brand-wrapper {
-  width: 15%;
+  width: 20%;
   height: 100%;
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +99,7 @@ div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-
 
 div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item,
 div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item div.pro-inner-item {
-  padding: .5rem .5rem .5rem 2.2rem;
+  padding: 0;
   align-items: center;
 }
 
