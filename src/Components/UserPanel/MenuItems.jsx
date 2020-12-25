@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import {
     MenuItem,
     SubMenu,
+    Menu
 } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 
@@ -16,26 +17,33 @@ function SidebarItem({ item, key }) {
                     {item.title}
                     <MenuItem>
                         {
-                            Array.isArray(item.items) ? item.items.flatMap((item2, index2) => (
-                                //<NavLinK></NavLinl>
+                            // Array.isArray(item.items) ? item.items.map((item2, index2) => (
+                            //<NavLinK></NavLinl>
+                            //     <MenuItem>
+                            //         <SidebarItem key={index2} item={item2} />
+                            //     </MenuItem>
+                            //     // <li key={index2}>
+                            //     //     <NavLink to="#">{item2.title}</NavLink>
+                            //     //     <ul>
+                            //     //         {
+                            //     //             Array.isArray(item2.items)
+                            //     //                 ? item2.items.flatMap((item3, index3) =>
+                            //     //                     <li key={index3}>
+                            //     //                         <NavLink to="#">{item3.title}</NavLink>
+                            //     //                     </li>
+                            //     //                 )
+                            //     //                 : null
+                            //     //         }
+                            //     //     </ul>
+                            //     // </li>
+                            // )) : null
+
+                            item.items && item.items.map((item2, index2) => (
                                 <MenuItem>
                                     <SidebarItem key={index2} item={item2} />
                                 </MenuItem>
-                                // <li key={index2}>
-                                //     <NavLink to="#">{item2.title}</NavLink>
-                                //     <ul>
-                                //         {
-                                //             Array.isArray(item2.items)
-                                //                 ? item2.items.flatMap((item3, index3) =>
-                                //                     <li key={index3}>
-                                //                         <NavLink to="#">{item3.title}</NavLink>
-                                //                     </li>
-                                //                 )
-                                //                 : null
-                                //         }
-                                //     </ul>
-                                // </li>
-                            )) : null
+                            ))
+
                         }
                     </MenuItem>
                 </MenuItem>

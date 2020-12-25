@@ -125,6 +125,7 @@ div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-
   font-size: 95%;
   color: #000000;
   margin-right: .5rem;
+  overflow: visible;
 }
 
 div.sidebar-brand-wrapper div.pro-sidebar div.pro-sidebar-inner div.pro-sidebar-layout nav.pro-menu.shaped.circle ul li.pro-menu-item.pro-sub-menu div.pro-inner-item span.pro-arrow-wrapper,
