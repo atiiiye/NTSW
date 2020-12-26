@@ -114,6 +114,6 @@ div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-
 
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
   font-size: 80%;
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 /*# sourceMappingURL=MenuItems.css.map */

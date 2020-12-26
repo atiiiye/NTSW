@@ -62,53 +62,40 @@ body {
   padding: 2rem;
 }
 
-nav.user-header.navbar {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: max-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-}
-
-nav.user-header.navbar div.user-header-left {
-  width: 35%;
-}
-
-nav.user-header.navbar div.user-header-left nav.breadcrumb {
-  background-color: transparent;
-  margin-bottom: 0;
+div.window {
   width: 100%;
 }
 
-nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb {
-  background-color: #ffffff;
-  width: max-content;
+div.window div.parent-content {
+  padding: auto 1rem;
 }
 
-nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb a.breadcrumb-item {
-  text-decoration: none;
-  font-size: 90%;
+div.window div.parent-content div#alertBoxForSupport div.well.bordered-left.bordered-themeprimary {
+  border-right: 5px solid #001d4a;
+  border-radius: 2px;
+  background-clip: padding-box;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #fbfbfb;
+  border: 0;
+  color: #000000;
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 0;
 }
 
-nav.user-header.navbar div.user-header-right {
-  width: 25%;
-}
-
-nav.user-header.navbar div.user-header-right div.form-group {
-  text-align: right;
-  margin-bottom: 0;
-}
-
-nav.user-header.navbar div.user-header-right div.form-group label {
-  font-size: 85%;
+div.window div.parent-content div#alertBoxForSupport div.well.bordered-left.bordered-themeprimary p {
+  font-size: 75%;
   display: flex;
+  justify-content: flex-start;
   text-align: right;
 }
 
-nav.user-header.navbar div.user-header-right div.form-group select:focus {
-  border-color: #959aa2;
-  box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
+div.window div.parent-content div#alertBoxForSupport div.well.bordered-left.bordered-themeprimary p strong.fa.fa-circle {
+  color: #024158;
+  display: inline-block;
+}
+
+div.window div.parent-content div#alertBoxForSupport div.well.bordered-left.bordered-themeprimary p strong.fa.fa-circle:before {
+  content: "/f111";
 }
 /*# sourceMappingURL=DefaultPage.css.map */

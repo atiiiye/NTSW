@@ -14,11 +14,44 @@ const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(true);
   const toggle = () => setIsOpen(!isOpen);
 
+  const onEntering = () => {
+    let window = document.querySelector(".window");
+    window.style.width = "Calc(100%-265px)";
+
+    // console.log("Opening...");
+  };
+
+  const onEntered = () => {
+    let window = document.querySelector(".window");
+    window.style.width = "Calc(100%-265px)";
+    // console.log("Opened...");
+  };
+
+  const onExiting = () => {
+    let window = document.querySelector(".window");
+    window.style.width = "100%";
+
+    // console.log("Closing...");
+  };
+
+  const onExited = () => {
+    let window = document.querySelector(".window");
+    window.style.width = "100%";
+
+    // console.log("Closed...");
+  };
+
   return (
     <React.Fragment>
       <HeaderPanel handleCollapsedChange={toggle} />
-      <div style={{ display: "flex" }}>
-        <SidebarPanel isOpen={isOpen} />
+      <div className="parent-sidebar-content">
+        <SidebarPanel
+          isOpen={isOpen}
+          onEntering={onEntering}
+          onEntered={onEntered}
+          onExiting={onExiting}
+          onExited={onExited}
+        />
         {children}
       </div>
     </React.Fragment>

@@ -29,7 +29,7 @@ const SelectRole = () => {
   };
 
   if (redirect) {
-    return <Redirect to={{ pathname: "/selected" }} />;
+    return <Redirect to={{ pathname: "/DefultPage" }} />;
   }
   return (
     <React.Fragment>
@@ -75,8 +75,8 @@ const SelectRole = () => {
               ورود
             </Button>
           </Form>
-        <NavLink to="/" className={styles.HomeLink}>
-          <i className="fa fa-home" />
+          <NavLink to="/" className={styles.HomeLink}>
+            <i className="fa fa-home" />
           بازگشت به صفحه اصلی
         </NavLink>
         </div>

@@ -1,58 +1,114 @@
 @import "./base";
 
-nav.user-header.navbar {
-    background-color: $color-light-1;
+
+div.parent {
+    position: relative;
     width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    // border-bottom: 1px solid $color-light-2;
 
-    div.user-header-left {
-        width: 35%;
+    nav.user-header.navbar {
+        background-color: $color-light-1;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem 0;
+        // border-bottom: 1px solid $color-light-2;
 
-        nav.breadcrumb {
-            background-color: transparent;
-            margin-bottom: 0;
-            width: 100%;
+        div.user-header-left {
+            width: 55%;
 
-            ol.breadcrumb {
-                background-color: $color-white;
-                width: max-content;
+            nav.breadcrumb {
+                background-color: transparent;
+                margin-bottom: 0;
+                width: 100%;
 
-                a.breadcrumb-item {
-                    text-decoration: none;
-                    // color: $color-black;
+                ol.breadcrumb {
+                    background-color: $color-white;
+                    width: max-content;
+
+                    a.breadcrumb-item {
+                        text-decoration: none;
+                        // color: $color-black;
+                        font-size: 90%;
+                    }
+                }
+            }
+        }
+
+        div.user-header-right {
+            width: 45%;
+
+            div.form-group {
+                @include flex-box-default;
+                margin-bottom: 0;
+                width: 100%;
+                justify-content: flex-end;
+
+                label {
+                    // color: $color-light-5;
+                    font-size: 85%;
+                    display: flex;
+                    margin-bottom: 0;
+                    margin-left: .5rem;
+                }
+
+                select {
+                    width: 60%;
                     font-size: 90%;
+
+                    &:focus {
+                        border-color: $color-light-4;
+                        box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+                    }
                 }
             }
         }
     }
 
-    div.user-header-right {
-        width: 25%;
+    div.page-header {
+        background-color: $color-white;
+        margin-left: 0;
+        width: 100%;
+        height: 45px;
 
-        div.form-group {
-            text-align: right;
-            margin-bottom: 0;
-            // width: 60%;
+        div.header-buttons {
+            padding: 0 1.5rem;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            // top: 0;
 
-            label {
-                // color: $color-light-5;
+            div.timer-container.timerDiv {
+                position: relative;
+                vertical-align: middle;
+                display: inline-block;
+                z-index: 1029;
+                height: 40px;
+                margin-left: 5px;
+                padding: 8px 10px;
+                transition: all 0.218s ease 0s;
+                float: left;
+                line-height: 30px;
                 font-size: 85%;
-                display: flex;
-                text-align: right;
 
-            }
+                span.text-time {
+                    width: 154px;
+                    color: $color-light-4;
 
-            select {
-                &:focus {
-                    border-color: $color-light-4;
-                    box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+                }
+
+                span.timerbox {
+                    width: 40px;
+                    padding: 0px 5px;
+                    border: 1px solid $color-light-4;
+                    border-radius: .12rem;
+                    background-color: $color-white;
                 }
             }
         }
+
     }
+
+
 }

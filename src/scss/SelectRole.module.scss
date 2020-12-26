@@ -25,21 +25,23 @@
     }
 
     form {
-        width: 100%;
+        width: 90%;
         @include flex-box-column();
 
         .formGroup {
             margin-top: 2rem;
             text-align: right;
-            width: 60%;
+            width: 45%;
 
             label {
                 // color: $color-light-5;
                 font-size: 95%;
-               
+
             }
 
             select {
+                font-size: 95%;
+
                 &:focus {
                     border-color: $color-light-4;
                     box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
@@ -48,7 +50,7 @@
         }
 
         .button {
-            width: 35%;
+            width: 250px;
             font-size: 100%;
             background-color: $color-pink-4 !important;
             color: $color-white;
@@ -70,7 +72,7 @@
         color: $color-white;
         padding: .5rem;
         border-radius: 4px;
-        width: 25%;
+        width: 200px;
         margin-top: 3rem;
 
         @include flex-box-default;

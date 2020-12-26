@@ -62,53 +62,109 @@ body {
   padding: 2rem;
 }
 
-nav.user-header.navbar {
+div.parent {
+  position: relative;
+  width: 100%;
+}
+
+div.parent nav.user-header.navbar {
   background-color: #f7f7f7;
   width: 100%;
   height: max-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 0;
 }
 
-nav.user-header.navbar div.user-header-left {
-  width: 35%;
+div.parent nav.user-header.navbar div.user-header-left {
+  width: 55%;
 }
 
-nav.user-header.navbar div.user-header-left nav.breadcrumb {
+div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb {
   background-color: transparent;
   margin-bottom: 0;
   width: 100%;
 }
 
-nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb {
+div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb {
   background-color: #ffffff;
   width: max-content;
 }
 
-nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb a.breadcrumb-item {
+div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb a.breadcrumb-item {
   text-decoration: none;
   font-size: 90%;
 }
 
-nav.user-header.navbar div.user-header-right {
-  width: 25%;
+div.parent nav.user-header.navbar div.user-header-right {
+  width: 45%;
 }
 
-nav.user-header.navbar div.user-header-right div.form-group {
-  text-align: right;
+div.parent nav.user-header.navbar div.user-header-right div.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0;
+  width: 100%;
+  justify-content: flex-end;
 }
 
-nav.user-header.navbar div.user-header-right div.form-group label {
+div.parent nav.user-header.navbar div.user-header-right div.form-group label {
   font-size: 85%;
   display: flex;
-  text-align: right;
+  margin-bottom: 0;
+  margin-left: .5rem;
 }
 
-nav.user-header.navbar div.user-header-right div.form-group select:focus {
+div.parent nav.user-header.navbar div.user-header-right div.form-group select {
+  width: 60%;
+  font-size: 90%;
+}
+
+div.parent nav.user-header.navbar div.user-header-right div.form-group select:focus {
   border-color: #959aa2;
   box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
+}
+
+div.parent div.page-header {
+  background-color: #ffffff;
+  margin-left: 0;
+  width: 100%;
+  height: 45px;
+}
+
+div.parent div.page-header div.header-buttons {
+  padding: 0 1.5rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+div.parent div.page-header div.header-buttons div.timer-container.timerDiv {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  z-index: 1029;
+  height: 40px;
+  margin-left: 5px;
+  padding: 8px 10px;
+  transition: all 0.218s ease 0s;
+  float: left;
+  line-height: 30px;
+  font-size: 85%;
+}
+
+div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.text-time {
+  width: 154px;
+  color: #959aa2;
+}
+
+div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.timerbox {
+  width: 40px;
+  padding: 0px 5px;
+  border: 1px solid #959aa2;
+  border-radius: .12rem;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=HeaderAccount.css.map */

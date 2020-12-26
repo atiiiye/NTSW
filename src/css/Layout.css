@@ -62,25 +62,44 @@ body {
   padding: 2rem;
 }
 
-div div.mainCollapse {
-  width: 15%;
+div.parent-sidebar-content {
+  display: flex;
+}
+
+div.parent-sidebar-content div.mainCollapse {
+  width: 265px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   min-height: 90vh;
   height: 100%;
   background-color: #ffffff;
+  z-index: 10;
 }
 
-div div.mainCollapse.collapse.show {
+div.parent-sidebar-content div.mainCollapse:before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.parent-sidebar-content div.mainCollapse.collapse.show {
   transform: translate(0, 0);
 }
 
-div div.mainCollapse.collapsing {
+div.parent-sidebar-content div.mainCollapse.collapsing {
   transform: translate(100%, 0);
-  width: 15%;
+  width: 265px;
 }
 
-div div.mainCollapse.collapse {
+div.parent-sidebar-content div.mainCollapse.collapse {
   transform: translate(100%, 0);
-  width: 15%;
+  width: 265px;
 }
 /*# sourceMappingURL=Layout.css.map */

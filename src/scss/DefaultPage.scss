@@ -1,3 +1,40 @@
 @import './base';
 
+div.window {
+    width: 100%;
 
+    div.parent-content {
+        padding: auto 1rem;
+
+        div#alertBoxForSupport {
+            div.well.bordered-left.bordered-themeprimary {
+                border-right: 5px solid $color-blue-dark-6;
+                border-radius: 2px;
+                background-clip: padding-box;
+                box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+                background-color: $color-light-0;
+                border: 0;
+                color: $color-black;
+                position: relative;
+                margin-bottom: 30px;
+                min-height: 0;
+
+                p {
+                    font-size: 75%;
+                    display: flex;
+                    justify-content: flex-start;
+                    text-align: right;
+
+                    strong.fa.fa-circle {
+                        color: #024158;
+                        display: inline-block;
+
+                        &:before {
+                            content: "/f111";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

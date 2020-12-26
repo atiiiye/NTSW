@@ -131,13 +131,13 @@ nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div {
 nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 85%;
+  font-size: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a:focus {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a:focus, nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a:hover {
   outline: none;
   color: #dadada;
 }

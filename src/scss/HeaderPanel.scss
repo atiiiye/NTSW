@@ -62,10 +62,13 @@ nav.navbar {
                 a {
                     color: $color-white;
                     text-decoration: none;
-                    font-size: 85%;
+                    font-size: 80%;
                     @include flex-box-default;
+                    // border-left: 1px solid $color-light-4;
+                    // padding-left: .5rem;
 
-                    &:focus {
+                    &:focus,
+                    &:hover {
                         outline: none;
                         color: $color-light-2;
                     }
