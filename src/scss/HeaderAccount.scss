@@ -1,0 +1,58 @@
+@import "./base";
+
+nav.user-header.navbar {
+    background-color: $color-light-1;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    // border-bottom: 1px solid $color-light-2;
+
+    div.user-header-left {
+        width: 35%;
+
+        nav.breadcrumb {
+            background-color: transparent;
+            margin-bottom: 0;
+            width: 100%;
+
+            ol.breadcrumb {
+                background-color: $color-white;
+                width: max-content;
+
+                a.breadcrumb-item {
+                    text-decoration: none;
+                    // color: $color-black;
+                    font-size: 90%;
+                }
+            }
+        }
+    }
+
+    div.user-header-right {
+        width: 25%;
+
+        div.form-group {
+            text-align: right;
+            margin-bottom: 0;
+            // width: 60%;
+
+            label {
+                // color: $color-light-5;
+                font-size: 85%;
+                display: flex;
+                text-align: right;
+
+            }
+
+            select {
+                &:focus {
+                    border-color: $color-light-4;
+                    box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+                }
+            }
+        }
+    }
+}

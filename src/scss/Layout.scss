@@ -1,0 +1,51 @@
+@import './base';
+
+div {
+
+
+
+    // div.MuiCollapse-container#mainCollapse {
+    //     transform: translate(100%, 0);
+    //     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    //     width: 15%;
+
+    //     // div.MuiCollapse-wrapper {
+    //     //     position: fixed;
+    //     // }
+    // }
+
+    // div.MuiCollapse-container.MuiCollapse-entered#mainCollapse {
+    //     transform: translate(0, 0);
+    // }
+
+    // div.MuiCollapse-container.MuiCollapse-hidden#mainCollapse {
+    //     transform: translate(100%, 0);
+    // }
+
+    div.mainCollapse {
+        width: 15%;
+        transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        min-height: 90vh;
+        height: 100%;
+        background-color: $color-white;
+
+
+    }
+
+    div.mainCollapse.collapse.show {
+        transform: translate(0, 0);
+    }
+
+    div.mainCollapse.collapsing {
+        transform: translate(100%, 0);
+        width: 15%;
+
+    }
+
+    div.mainCollapse.collapse {
+        transform: translate(100%, 0);
+        width: 15%;
+    }
+
+
+}

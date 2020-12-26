@@ -50,7 +50,7 @@ body {
   direction: rtl;
   font-size: 100%;
   font-family: Vazir;
-  background-color: #b0b0b2;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -107,7 +107,6 @@ nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right button:focus, n
   border-color: none;
   box-shadow: 0 0 0 0 transparent !important;
   border-color: transparent;
-  color: #dadada;
 }
 
 nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right button svg {

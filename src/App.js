@@ -12,6 +12,7 @@ import "font-awesome/css/font-awesome.min.css";
 import SelectRole from './Components/SelectRole/SelectRole';
 import Selected from './Components/Selected/Selected';
 import Layout from './Components/UserPanel/Layout';
+import DefultPage from './Components/Users/DefaultPage';
 import Home from './Components/Home';
 
 
@@ -22,6 +23,7 @@ function App() {
       <Route exact path="/select-role" component={SelectRole}/>
       <Route exact path="/selected" component={Selected}/>
       <Route exact path="/layout" component={Layout}/>
+      <Route exact path="/DefultPage" component={DefultPage}/>
     </Switch>
   );
 }

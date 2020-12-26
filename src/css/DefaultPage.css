@@ -50,7 +50,7 @@ body {
   direction: rtl;
   font-size: 100%;
   font-family: Vazir;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -62,17 +62,53 @@ body {
   padding: 2rem;
 }
 
-div.MuiCollapse-container#mainCollapse {
-  transform: translate(100%, 0);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  width: 15%;
+nav.user-header.navbar {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
 
-div.MuiCollapse-container.MuiCollapse-entered#mainCollapse {
-  transform: translate(0, 0);
+nav.user-header.navbar div.user-header-left {
+  width: 35%;
 }
 
-div.MuiCollapse-container.MuiCollapse-hidden#mainCollapse {
-  transform: translate(100%, 0);
+nav.user-header.navbar div.user-header-left nav.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+  width: 100%;
 }
-/*# sourceMappingURL=SidebarPanel.css.map */
+
+nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb {
+  background-color: #ffffff;
+  width: max-content;
+}
+
+nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb a.breadcrumb-item {
+  text-decoration: none;
+  font-size: 90%;
+}
+
+nav.user-header.navbar div.user-header-right {
+  width: 25%;
+}
+
+nav.user-header.navbar div.user-header-right div.form-group {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+nav.user-header.navbar div.user-header-right div.form-group label {
+  font-size: 85%;
+  display: flex;
+  text-align: right;
+}
+
+nav.user-header.navbar div.user-header-right div.form-group select:focus {
+  border-color: #959aa2;
+  box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
+}
+/*# sourceMappingURL=DefaultPage.css.map */
