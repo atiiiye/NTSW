@@ -6,6 +6,9 @@ import styles from "./../../css/SelectRole.module.css";
 //boootstrap
 import { Input, Label, FormGroup, Button, Form } from "reactstrap";
 
+//components
+import SelectBox from './SelectBox'
+
 //import routes
 import { NavLink, Redirect } from "react-router-dom";
 
@@ -22,10 +25,6 @@ const SelectRole = () => {
     } else {
       console.error("Invalid Form");
     }
-  };
-
-  const handleOnchange = (event) => {
-    event.preventDefault();
   };
 
   if (redirect) {
@@ -48,29 +47,7 @@ const SelectRole = () => {
             </span>
           </div>
           <Form onSubmit={handleSubmit}>
-            <FormGroup className={styles.formGroup}>
-              <Label for="selectRole">انتخاب نقش : </Label>
-              <Input
-                type="select"
-                name="select"
-                id="selectRole"
-                onChange={handleOnchange}
-              >
-                <option value="">پایه حقیقی - فعال</option>
-                <option value="">بازرگان حقیقی - فعال</option>
-                <option value="">پایه حقوقی شرکت تستی - فعال</option>
-                <option value="">
-                  بازرگان حقیقی(منطقه ویژه اقتصادی رفسنجان) - فعال
-                </option>
-                <option value="">
-                  مجوز موردی تولیدی (بهین یاب) حقیقی - فعال
-                </option>
-
-                {/* {options.map((option) => (
-                  <option value={option.value}>{option.label}</option>
-                ))} */}
-              </Input>
-            </FormGroup>
+        <SelectBox/>
             <Button className={styles.button} type="submit">
               ورود
             </Button>
@@ -80,7 +57,6 @@ const SelectRole = () => {
           بازگشت به صفحه اصلی
         </NavLink>
         </div>
-
       </div>
     </React.Fragment>
   );

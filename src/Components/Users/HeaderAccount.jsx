@@ -9,16 +9,15 @@ import {
   Label,
   FormGroup,
 } from "reactstrap";
+import SelectBox from "../SelectRole/SelectBox";
 
 //css
 import "./../../css/HeaderAccount.css";
 
-
 const HeaderAccount = () => {
-
   const handleOnchange = (event) => {
     event.preventDefault();
-  }
+  };
 
   return (
     <div className="parent">
@@ -27,33 +26,17 @@ const HeaderAccount = () => {
           <Breadcrumb className="breadcrumb">
             <BreadcrumbItem tag="a" href="/">
               خانه
-          </BreadcrumbItem>
+            </BreadcrumbItem>
             <BreadcrumbItem tag="a" href="/select-role">
               انتخاب نقش
-          </BreadcrumbItem>
+            </BreadcrumbItem>
             <BreadcrumbItem active tag="a" href="#">
               صفحه اول
-          </BreadcrumbItem>
+            </BreadcrumbItem>
           </Breadcrumb>
         </div>
         <div className="user-header-right">
-          <FormGroup>
-            <Label for="selectRole">انتخاب نقش : </Label>
-            <Input
-              type="select"
-              name="select"
-              id="selectRole"
-              onChange={handleOnchange}
-            >
-              <option value="">پایه حقیقی - فعال</option>
-              <option value="">بازرگان حقیقی - فعال</option>
-              <option value="">پایه حقوقی شرکت تستی - فعال</option>
-              <option value="">
-                بازرگان حقیقی(منطقه ویژه اقتصادی رفسنجان) - فعال
-            </option>
-              <option value="">مجوز موردی تولیدی (بهین یاب) حقیقی - فعال</option>
-            </Input>
-          </FormGroup>
+          <SelectBox />
         </div>
       </Navbar>
       <div className="page-header">
@@ -67,7 +50,6 @@ const HeaderAccount = () => {
             </span>
           </div>
         </div>
-
       </div>
     </div>
   );

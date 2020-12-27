@@ -28,27 +28,6 @@
         width: 90%;
         @include flex-box-column();
 
-        .formGroup {
-            margin-top: 2rem;
-            text-align: right;
-            width: 45%;
-
-            label {
-                // color: $color-light-5;
-                font-size: 95%;
-
-            }
-
-            select {
-                font-size: 95%;
-
-                &:focus {
-                    border-color: $color-light-4;
-                    box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
-                }
-            }
-        }
-
         .button {
             width: 250px;
             font-size: 100%;

@@ -100,25 +100,6 @@ body {
   flex-direction: column;
 }
 
-.contents form .formGroup {
-  margin-top: 2rem;
-  text-align: right;
-  width: 45%;
-}
-
-.contents form .formGroup label {
-  font-size: 95%;
-}
-
-.contents form .formGroup select {
-  font-size: 95%;
-}
-
-.contents form .formGroup select:focus {
-  border-color: #959aa2;
-  box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
-}
-
 .contents form .button {
   width: 250px;
   font-size: 100%;

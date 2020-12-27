@@ -1,0 +1,23 @@
+@import './base';        
+        
+        
+        .formGroup {
+            margin-top: 2rem;
+            text-align: right;
+            width: 45%;
+
+            label {
+                // color: $color-light-5;
+                font-size: 95%;
+
+            }
+
+            select {
+                font-size: 95%;
+
+                &:focus {
+                    border-color: $color-light-4;
+                    box-shadow: 0 0 .2rem .05rem rgba($color: $color-light-5, $alpha: .7);
+                }
+            }
+        }

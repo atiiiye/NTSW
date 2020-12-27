@@ -23,7 +23,7 @@ div.parent-sidebar-content {
     // }
 
     div.mainCollapse {
-        width: 265px;
+        width: 300px;
         transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
         min-height: 90vh;
         height: 100%;
@@ -53,15 +53,10 @@ div.parent-sidebar-content {
 
     div.mainCollapse.collapsing {
         transform: translate(100%, 0);
-        width: 265px;
-
-
     }
 
     div.mainCollapse.collapse {
         transform: translate(100%, 0);
-        width: 265px;
-
     }
 
 

@@ -7,6 +7,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 
 // import packages
 import "font-awesome/css/font-awesome.min.css";
+import "./../node_modules/fontawesome-4.7/css/font-awesome.min.css";
 
 //components
 import SelectRole from './Components/SelectRole/SelectRole';
