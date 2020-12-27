@@ -16,14 +16,14 @@ const Layout = ({ children }) => {
 
   const onEntering = () => {
     let window = document.querySelector(".window");
-    window.style.width = "Calc(100%-265px)";
+    window.style.width = "Calc(100%-350px)";
 
     // console.log("Opening...");
   };
 
   const onEntered = () => {
     let window = document.querySelector(".window");
-    window.style.width = "Calc(100%-265px)";
+    window.style.width = "Calc(100%-350px)";
     // console.log("Opened...");
   };
 

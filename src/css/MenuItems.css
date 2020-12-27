@@ -94,6 +94,13 @@ div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-cont
   background-color: #001d4a;
   padding: .5rem;
   border-radius: 50%;
+  transition: transform .2s ease-in;
+}
+
+div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content i:hover {
+  transform: rotate(5deg);
+  color: #f7f7f7;
+  transition: transform .2s ease-in;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
@@ -113,6 +120,24 @@ div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
+  font-size: 80%;
+  overflow-wrap: break-word;
+}
+
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiButtonBase-root.MuiListItem-root.sidebar-item.MuiListItem-dense.MuiListItem-gutters.MuiListItem-button {
+  width: 100%;
+}
+
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiButtonBase-root.MuiListItem-root.sidebar-item.MuiListItem-dense.MuiListItem-gutters.MuiListItem-button div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
+  font-size: 80%;
+  overflow-wrap: break-word;
+}
+
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container {
+  width: 100%;
+}
+
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
   font-size: 80%;
   overflow-wrap: break-word;
 }
