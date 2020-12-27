@@ -82,7 +82,7 @@ nav.navbar div.navbar-menu-wrapper {
 }
 
 nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right {
-  width: 70%;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -90,26 +90,35 @@ nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right {
   justify-content: flex-start;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right img {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right div.navbar-menu-box-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
   height: 100%;
-  width: 18%;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right button {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right div.navbar-menu-box-right img {
+  height: 100%;
+  width: 48%;
+}
+
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right div.navbar-menu-box-right button {
   background-color: transparent;
   border: none;
   box-shadow: none;
   padding: 0 .5rem;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right button:focus, nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right button:active {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right div.navbar-menu-box-right button:focus, nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right div.navbar-menu-box-right button:active {
   background-color: transparent;
   border-color: none;
   box-shadow: 0 0 0 0 transparent !important;
   border-color: transparent;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right button svg {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-right div.navbar-menu-box-right button svg {
   font-size: 1.8rem;
 }
 
@@ -117,18 +126,27 @@ nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 70%;
   height: 100%;
   justify-content: flex-end;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+  width: 35%;
+  height: 100%;
+}
+
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left div {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left div a {
   color: #ffffff;
   text-decoration: none;
   font-size: 80%;
@@ -137,16 +155,16 @@ nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a {
   justify-content: center;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a:focus, nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a:hover {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left div a:focus, nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left div a:hover {
   outline: none;
   color: #dadada;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a i {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left div a i {
   color: #ffffff;
 }
 
-nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div a i:active {
+nav.navbar div.navbar-menu-wrapper div.navbar-menu-wrapper-left div.navbar-menu-box-left div a i:active {
   color: #dadada;
 }
 /*# sourceMappingURL=HeaderPanel.css.map */

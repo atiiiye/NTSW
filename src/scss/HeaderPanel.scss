@@ -16,73 +16,88 @@ nav.navbar {
         padding: .5rem 0;
 
         div.navbar-menu-wrapper-right {
-            width: 70%;
+            width: 30%;
             height: 100%;
             @include flex-box-default;
             justify-content: flex-start;
 
-            img {
+            div.navbar-menu-box-right {
+                @include flex-box-default;
+                justify-content: flex-start;
+                width: 100%;
                 height: 100%;
-                width: 18%;
-            }
 
-            button {
-                background-color: transparent;
-                border: none;
-                box-shadow: none;
-                padding: 0 .5rem;
-
-                &:focus,
-                &:active {
-                    background-color: transparent;
-                    border-color: none;
-                    box-shadow: 0 0 0 0 transparent !important;
-                    border-color: transparent;
-
-                    // color: $color-light-2;
+                img {
+                    height: 100%;
+                    width: 48%;
                 }
 
-                svg {
-                    font-size: 1.8rem;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: none;
+                    padding: 0 .5rem;
+
+                    &:focus,
+                    &:active {
+                        background-color: transparent;
+                        border-color: none;
+                        box-shadow: 0 0 0 0 transparent !important;
+                        border-color: transparent;
+
+                        // color: $color-light-2;
+                    }
+
+                    svg {
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }
 
         div.navbar-menu-wrapper-left {
             @include flex-box-default;
-            width: 30%;
+            width: 70%;
             height: 100%;
             justify-content: flex-end;
 
-            div {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
+            div.navbar-menu-box-left {
+                @include flex-box-default;
+                justify-content: flex-end;
+                width: 35%;
+                height: 100%;
 
-                a {
-                    color: $color-white;
-                    text-decoration: none;
-                    font-size: 80%;
-                    @include flex-box-default;
-                    // border-left: 1px solid $color-light-4;
-                    // padding-left: .5rem;
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
 
-                    &:focus,
-                    &:hover {
-                        outline: none;
-                        color: $color-light-2;
-                    }
-
-                    i {
+                    a {
                         color: $color-white;
-                        // font-size: 14px;
+                        text-decoration: none;
+                        font-size: 80%;
+                        @include flex-box-default;
+                        // border-left: 1px solid $color-light-4;
+                        // padding-left: .5rem;
 
-                        &:active {
+                        &:focus,
+                        &:hover {
+                            outline: none;
                             color: $color-light-2;
+                        }
+
+                        i {
+                            color: $color-white;
+                            // font-size: 14px;
+
+                            &:active {
+                                color: $color-light-2;
+                            }
                         }
                     }
                 }
             }
+
         }
     }
 }

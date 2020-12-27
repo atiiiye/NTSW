@@ -4,13 +4,11 @@ import React from "react";
 //components
 import Layout from "../UserPanel/Layout";
 import HeaderAccount from "./HeaderAccount";
+import DataBox from "./../../utils/DataBox";
 
 //css
 import "./../../css/DefaultPage.css";
-import { NavLink } from "react-router-dom";
 
-//packages
-import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 
 const DefaultPage = () => {
   return (
@@ -25,22 +23,45 @@ const DefaultPage = () => {
                 id="boxForBazargan"
               >
                 <div className="row">
-                  <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div className="databox databox-shadowed">
-                      <NavLink to="#" className="managInvoice">
-                        <i className="fa fa-clipboard" />
-                      </NavLink>
-                      <div className="databox-left">
-                        <span id="spnSumProforma" className="databox-number">
-                          3801
-                        </span>
-                        <span className="databox-text">پرونده های ثبت شده</span>
-                        <div className="databox-state">
-                          <HighlightOffIcon />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <DataBox
+                    dataBoxNumber={3801}
+                    dataBoxText={"پرونده های ثبت شده"}
+                    icon={<i className="fa fa-clipboard" />}
+                    bgStyle={"#fa7d09"}
+                  />
+                  <DataBox
+                    dataBoxNumber={214}
+                    dataBoxText={"پرونده های تایید شده"}
+                    icon={<i className="fas fa-file" />}
+                    bgStyle={"#c70d3a"}
+                  />
+                  <DataBox
+                    dataBoxNumber={7}
+                    dataBoxText={
+                      "گشایش های اعتبار اسنادی/ حواله/ برات تایید شده"
+                    }
+                    icon={<i className="fa fa-list-alt" />}
+                    bgStyle={"#03506f"}
+                  />
+                  <DataBox
+                    dataBoxNumber={16}
+                    dataBoxText={" منشا ارزهای غیر بانکی ثبت شده"}
+                    icon={<i className="fa fa-credit-card" />}
+                    bgStyle={"#fddb3a"}
+                  />
+                  <DataBox
+                    dataBoxNumber={120}
+                    dataBoxText={"نمایندگان فعال"}
+                    icon={<i className="fa fa-users" />}
+                    bgStyle={"#cc0e74"}
+                  />
+
+                  <DataBox
+                    dataBoxNumber={1}
+                    dataBoxText={"منشا ارزهای بانکی ثبت شده"}
+                    icon={<i className="fa fa-money" />}
+                    bgStyle={"#007944"}
+                  />
                 </div>
               </div>
             </div>
