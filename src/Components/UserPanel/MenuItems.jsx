@@ -167,7 +167,6 @@ const MenuItems = () => {
           items: [
             {
               title: "خرید ارز",
-              items: [{ title: "Salam :)))" }],
             },
             {
               title: "تعیین منشا ارز",

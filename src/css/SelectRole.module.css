@@ -90,6 +90,7 @@ body {
   line-height: 1.7rem;
   text-align: right;
   color: #777;
+  font-size: 90%;
 }
 
 .contents form {
@@ -103,13 +104,13 @@ body {
 .contents form .button {
   width: 250px;
   font-size: 100%;
-  background-color: #c70d3a !important;
+  background-color: #001d4a !important;
   color: #ffffff;
   border: none;
 }
 
 .contents form .button:focus, .contents form .button:active {
-  box-shadow: 0 0 0 0.2rem rgba(199, 13, 58, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 29, 74, 0.5) !important;
   border: none !important;
 }
 

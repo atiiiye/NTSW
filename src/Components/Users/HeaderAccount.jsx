@@ -49,6 +49,10 @@ const HeaderAccount = () => {
               <span className="second">34</span>
             </span>
           </div>
+          {/* <div className="fullscreen">
+            <i className="glyphicon glyphicon-fullscreen"></i>
+          </div> */}
+
         </div>
       </div>
     </div>

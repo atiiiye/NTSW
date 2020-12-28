@@ -64,6 +64,9 @@ body {
 
 div.parent-sidebar-content {
   display: flex;
+  width: 100%;
+  height: calc(100vh -55px) !important;
+  position: fixed;
 }
 
 div.parent-sidebar-content div.mainCollapse {

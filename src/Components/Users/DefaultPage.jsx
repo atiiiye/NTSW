@@ -53,7 +53,7 @@ const DefaultPage = () => {
                     dataBoxNumber={120}
                     dataBoxText={"نمایندگان فعال"}
                     icon={<i className="fa fa-users" />}
-                    bgStyle={"#cc0e74"}
+                    bgStyle={"#e75b8d"}
                   />
 
                   <DataBox
@@ -70,7 +70,7 @@ const DefaultPage = () => {
                 className="col-lg-12 col-md-12 col-sm-12 col-xs-12"
                 id="alertBoxForSupport"
               >
-                <div className="well bordered-left bordered-themeprimary">
+                <div className="well">
                   <p>
                     <strong className="fa fa-circle"></strong>
                     کاربر گرامی، شما می‌توانید در صورت مواجه با هر مشکل فنی در

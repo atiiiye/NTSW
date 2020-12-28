@@ -23,7 +23,7 @@ const DataBaox = ({ dataBoxNumber, dataBoxText, icon, bgStyle }) => {
           <span className="databox-text">{dataBoxText}</span>
 
           <div className="databox-state">
-            <HighlightOffIcon style={{ fill: `${bgStyle}` }} />
+            <HighlightOffIcon style={{ fill: `${bgStyle}`, transform:'rotate(135deg)' }} />
           </div>
         </div>
       </div>

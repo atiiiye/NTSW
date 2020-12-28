@@ -21,6 +21,7 @@
             line-height: 1.7rem;
             text-align: right;
             color: $color-light-5;
+            font-size: 90%;
         }
     }
 
@@ -31,13 +32,13 @@
         .button {
             width: 250px;
             font-size: 100%;
-            background-color: $color-pink-4 !important;
+            background-color: $color-blue-dark-6 !important;
             color: $color-white;
             border: none;
 
             &:focus,
             &:active {
-                box-shadow: 0 0 0 .2rem rgba($color: $color-pink-4, $alpha: .5) !important;
+                box-shadow: 0 0 0 .2rem rgba($color: $color-blue-dark-6, $alpha: .5) !important;
                 border: none !important;
             }
         }

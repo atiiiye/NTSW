@@ -26,10 +26,11 @@ const Layout = ({ children }) => {
     window.style.width = "Calc(100%-350px)";
     // console.log("Opened...");
   };
-
+  
   const onExiting = () => {
     let window = document.querySelector(".window");
     window.style.width = "100%";
+    // window.style.transform =" translate(80%,0)";
 
     // console.log("Closing...");
   };
@@ -37,6 +38,7 @@ const Layout = ({ children }) => {
   const onExited = () => {
     let window = document.querySelector(".window");
     window.style.width = "100%";
+    // window.style.transform = " translate(100%,0)";
 
     // console.log("Closed...");
   };

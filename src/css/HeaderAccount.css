@@ -74,22 +74,30 @@ div.parent nav.user-header.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem 0;
+  padding: 1rem 1.5rem;
 }
 
 div.parent nav.user-header.navbar div.user-header-left {
+  height: 100%;
   width: 55%;
 }
 
 div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb {
   background-color: transparent;
   margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
 }
 
 div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb {
   background-color: #ffffff;
   width: max-content;
+  margin: 0;
 }
 
 div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcrumb a.breadcrumb-item {
@@ -99,13 +107,14 @@ div.parent nav.user-header.navbar div.user-header-left nav.breadcrumb ol.breadcr
 
 div.parent nav.user-header.navbar div.user-header-right {
   width: 45%;
+  height: 100%;
 }
 
 div.parent nav.user-header.navbar div.user-header-right div.form-group {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
+  margin: 0;
   width: 100%;
   justify-content: flex-end;
 }
@@ -136,35 +145,57 @@ div.parent div.page-header {
 
 div.parent div.page-header div.header-buttons {
   padding: 0 1.5rem;
-  display: inline-block;
   position: absolute;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 250px;
 }
 
 div.parent div.page-header div.header-buttons div.timer-container.timerDiv {
   position: relative;
-  vertical-align: middle;
-  display: inline-block;
-  z-index: 1029;
   height: 40px;
   margin-left: 5px;
-  padding: 8px 10px;
   transition: all 0.218s ease 0s;
-  float: left;
-  line-height: 30px;
-  font-size: 85%;
+  font-size: 80%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.text-time {
-  width: 154px;
+  width: max-content;
   color: #959aa2;
+  margin-left: .5rem;
 }
 
 div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.timerbox {
-  width: 40px;
+  width: 50px;
   padding: 0px 5px;
   border: 1px solid #959aa2;
   border-radius: .12rem;
   background-color: #ffffff;
+  height: 60%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.timerbox span {
+  height: max-content;
+}
+
+div.parent div.page-header div.header-buttons div.fullscreen {
+  height: 100% !important;
+  width: max-content !important;
+  z-index: 100;
+}
+
+div.parent div.page-header div.header-buttons div.fullscreen i {
+  color: #dadada;
+  font-size: 24px;
 }
 /*# sourceMappingURL=HeaderAccount.css.map */

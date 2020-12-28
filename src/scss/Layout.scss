@@ -3,6 +3,9 @@
 div.parent-sidebar-content {
 
     display: flex;
+    width: 100%;
+    height: calc(100vh -55px) !important;
+    position: fixed;
 
     // div.MuiCollapse-container#mainCollapse {
     //     transform: translate(100%, 0);

@@ -64,7 +64,7 @@ body {
 
 div.sidebar {
   width: 100%;
-  height: max-content;
+  height: 100%;
   padding-top: 1.5rem;
 }
 
