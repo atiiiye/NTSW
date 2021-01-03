@@ -64,8 +64,11 @@ body {
 
 div.sidebar {
   width: 100%;
+  position: fixed;
   height: 100%;
   padding-top: 1.5rem;
+  height: max-content;
+  padding-bottom: 1.5rem;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense {
@@ -74,7 +77,8 @@ div.sidebar ul.MuiList-root.MuiList-dense {
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item {
-  margin-bottom: .5rem;
+  padding-top: 0;
+  height: 45px;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content {
@@ -119,26 +123,49 @@ div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-
   width: 100%;
 }
 
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item {
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 45px;
+}
+
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
   font-size: 80%;
-  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: right;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiButtonBase-root.MuiListItem-root.sidebar-item.MuiListItem-dense.MuiListItem-gutters.MuiListItem-button {
   width: 100%;
 }
 
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiButtonBase-root.MuiListItem-root.sidebar-item.MuiListItem-dense.MuiListItem-gutters.MuiListItem-button div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item {
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 45px;
+}
+
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiButtonBase-root.MuiListItem-root.sidebar-item.MuiListItem-dense.MuiListItem-gutters.MuiListItem-button div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
   font-size: 80%;
-  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: right;
+  width: 160px;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container {
   width: 100%;
 }
 
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item {
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 45px;
+}
+
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item div.sidebar-item-content div.sidebar-item-text {
-  font-size: 80%;
-  overflow-wrap: break-word;
+  font-size: 78%;
+  word-break: break-word;
+  text-align: right;
+  width: 150px;
 }
 /*# sourceMappingURL=MenuItems.css.map */
