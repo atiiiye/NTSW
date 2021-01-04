@@ -166,7 +166,7 @@ const MenuItems = () => {
           id: "toggler5.1",
           items: [
             {
-              title: "خرید ارز",
+              title: <NavLink to="/">خرید ارز</NavLink>,
             },
             {
               title: "تعیین منشا ارز",

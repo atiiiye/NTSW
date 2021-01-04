@@ -54,18 +54,14 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 1360px;
-  padding: 2rem;
+  max-width: 1260px;
+  padding: 0;
 }
 
 .formGroup {
   margin-top: 2rem;
   text-align: right;
-  width: 45%;
+  width: 50%;
 }
 
 .formGroup label {
@@ -79,5 +75,125 @@ body {
 .formGroup select:focus {
   border-color: #959aa2;
   box-shadow: 0 0 0.2rem 0.05rem rgba(119, 119, 119, 0.7);
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir.eot");
+  src: url("./../fonts/Vazir.eot") format("embedded-opentype"), url("./../fonts/Vazir.woff2") format("woff2"), url("./../fonts/Vazir.woff") format("woff"), url("./../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Bold.eot");
+  src: url("./../fonts/Vazir-Bold.eot") format("embedded-opentype"), url("./../fonts/Vazir-Bold.woff2") format("woff2"), url("./../fonts/Vazir-Bold.woff") format("woff"), url("./../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Black.eot");
+  src: url("./../fonts/Vazir-Black.eot") format("embedded-opentype"), url("./../fonts/Vazir-Black.woff2") format("woff2"), url("./../fonts/Vazir-Black.woff") format("woff"), url("./../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Medium.eot");
+  src: url("./../fonts/Vazir-Medium.eot") format("embedded-opentype"), url("./../fonts/Vazir-Medium.woff2") format("woff2"), url("./../fonts/Vazir-Medium.woff") format("woff"), url("./../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Light.eot");
+  src: url("./../fonts/Vazir-Light.eot") format("embedded-opentype"), url("./../fonts/Vazir-Light.woff2") format("woff2"), url("./../fonts/Vazir-Light.woff") format("woff"), url("./../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Thin.eot");
+  src: url("./../fonts/Vazir-Thin.eot") format("embedded-opentype"), url("./../fonts/Vazir-Thin.woff2") format("woff2"), url("./../fonts/Vazir-Thin.woff") format("woff"), url("./../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  direction: rtl;
+  font-size: 100%;
+  font-family: Vazir;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .formGroup {
+    width: 60%;
+  }
+  .formGroup label {
+    font-size: 95%;
+  }
+  .formGroup select {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 999px) {
+  .formGroup {
+    width: 65%;
+  }
+  .formGroup label {
+    font-size: 90%;
+  }
+  .formGroup select {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .formGroup {
+    width: 75%;
+  }
+  .formGroup label {
+    font-size: 88%;
+  }
+  .formGroup select {
+    font-size: 88%;
+  }
+}
+
+@media (max-width: 576px) {
+  .formGroup {
+    width: 90%;
+  }
+  .formGroup label {
+    font-size: 85%;
+  }
+  .formGroup select {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 395px) {
+  .formGroup {
+    width: 100%;
+  }
+  .formGroup label {
+    font-size: 80%;
+  }
+  .formGroup select {
+    font-size: 80%;
+  }
 }
 /*# sourceMappingURL=SelectBox.module.css.map */

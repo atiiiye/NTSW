@@ -1,0 +1,71 @@
+@import './../base';
+
+@media (max-width:1200px) {
+    .formGroup {
+        width: 60%;
+
+        label {
+            font-size: 95%;
+        }
+
+        select {
+            font-size: 95%;
+        }
+    }
+}
+
+@media (max-width:999px) {
+    .formGroup {
+        width: 65%;
+
+        label {
+            font-size: 90%;
+        }
+
+        select {
+            font-size: 90%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .formGroup {
+        width: 75%;
+
+        label {
+            font-size: 88%;
+        }
+
+        select {
+            font-size: 88%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .formGroup {
+        width: 90%;
+
+        label {
+            font-size: 85%;
+        }
+
+        select {
+            font-size: 80%;
+        }
+    }
+}
+
+@media (max-width:395px) {
+    .formGroup {
+        width: 100%;
+
+        label {
+            font-size: 80%;
+        }
+
+        select {
+            font-size: 80%;
+        }
+    }
+}

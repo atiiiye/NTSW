@@ -54,26 +54,24 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 1360px;
-  padding: 2rem;
+  max-width: 1260px;
+  padding: 0;
 }
 
 div.sidebar {
   width: 100%;
   position: fixed;
-  height: 100%;
+  height: 100% !important;
   padding-top: 1.5rem;
-  height: max-content;
   padding-bottom: 1.5rem;
+  position: fixed;
+  overflow-y: scroll;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense {
   width: 100%;
   height: 100%;
+  margin-bottom: .5rem;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item {
@@ -121,6 +119,10 @@ div.sidebar ul.MuiList-root.MuiList-dense div.sidebar-item svg.MuiSvgIcon-root.s
 
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered {
   width: 100%;
+}
+
+div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense {
+  margin-bottom: 0;
 }
 
 div.sidebar ul.MuiList-root.MuiList-dense div.MuiCollapse-container.MuiCollapse-entered div.MuiCollapse-wrapper div.MuiCollapse-wrapperInner ul.MuiList-root.MuiList-dense div.sidebar-item {

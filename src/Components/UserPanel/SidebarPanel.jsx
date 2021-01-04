@@ -1,6 +1,11 @@
 import React from "react";
 
+//css
+import "./../../css/SidebarPanel.css";
+
+//components
 import MenuItems from "./MenuItems";
+
 import { Collapse } from "reactstrap";
 
 const SidebarPanel = ({ isOpen, onEntering, onEntered, onExiting, onExited }) => {

@@ -1,0 +1,182 @@
+@import './../base';
+
+@media (max-width:1200px) {
+    nav.navbar {
+        height: 55px;
+
+        div.navbar-menu-wrapper {
+            width: 100%;
+
+            div.navbar-menu-wrapper-right {
+                width: 30%;
+
+                div.navbar-menu-box-right {
+                    width: 100%;
+
+                    img {
+                        width: 270px;
+                    }
+
+                    button {
+                        svg {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+
+            div.navbar-menu-wrapper-left {
+                width: 70%;
+
+                div.navbar-menu-box-left {
+                    width: 400px;
+
+                    div {
+                        width: 100%;
+
+                        a {
+
+                            p {
+                                margin-bottom: 0;
+                            }
+
+                            font-size: 78%;
+
+                            i {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:999px) {
+    nav.navbar {
+        height: 50px;
+
+        div.navbar-menu-wrapper {
+            width: 100%;
+
+            div.navbar-menu-wrapper-right {
+                width: 50%;
+
+                div.navbar-menu-box-right {
+                    width: 100%;
+
+                    img {
+                        width: 240px;
+                    }
+
+                    button {
+                        svg {
+                            font-size: 1.65rem;
+                        }
+                    }
+                }
+            }
+
+            div.navbar-menu-wrapper-left {
+                width: 50%;
+
+                div.navbar-menu-box-left {
+                    width: 400px;
+
+                    div {
+                        width: 100%;
+
+                        a {
+                            font-size: 80%;
+
+                            p {
+                                margin-bottom: 0;
+                            }
+
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    nav.navbar {
+        height: 95px;
+
+        div.navbar-menu-wrapper {
+            width: 100%;
+
+            div.navbar-menu-wrapper-right {
+                width: 100%;
+                padding-right: 0;
+
+                div.navbar-menu-box-right {
+                    width: 100%;
+                    @include flex-box-default;
+
+                    img {
+                        width: 240px;
+                    }
+
+                }
+            }
+
+            div.navbar-menu-wrapper-left {
+                width: 100%;
+                justify-content: center;
+                padding-left: 0;
+
+                div.navbar-menu-box-left {
+                    width: max-content;
+
+                    div {
+                        width: 100%;
+                        justify-content: flex-end;
+
+                        button {
+                            background-color: transparent;
+                            border: none;
+                            box-shadow: none;
+                            padding: 0 .5rem;
+
+                            &:focus,
+                            &:active {
+                                background-color: transparent;
+                                border-color: none;
+                                box-shadow: 0 0 0 0 transparent !important;
+                                border-color: transparent;
+
+                                // color: $color-light-2;
+                            }
+
+                            svg {
+                                font-size: 1.7rem;
+                            }
+                        }
+
+                        a {
+                            font-size: 80%;
+                            margin-left: 1rem;
+
+                            &:last-child{
+                                margin-left: 0;
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                            }
+
+                            i {
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

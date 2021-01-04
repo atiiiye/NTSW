@@ -7,7 +7,7 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 
 const DataBaox = ({ dataBoxNumber, dataBoxText, icon, bgStyle }) => {
   return (
-    <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-3">
       <div className="databox databox-shadowed">
         <NavLink
           to="#"

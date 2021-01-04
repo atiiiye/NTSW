@@ -12,7 +12,7 @@ nav.navbar {
         @include flex-box-default;
         // justify-content: space-around;
         height: 100%;
-        width: 98%;
+        width: 100%;
         padding: .5rem 0;
 
         div.navbar-menu-wrapper-right {
@@ -20,6 +20,7 @@ nav.navbar {
             height: 100%;
             @include flex-box-default;
             justify-content: flex-start;
+            padding-right: .5rem;
 
             div.navbar-menu-box-right {
                 @include flex-box-default;
@@ -29,7 +30,7 @@ nav.navbar {
 
                 img {
                     height: 100%;
-                    width: 48%;
+                    width: 270px;
                 }
 
                 button {
@@ -60,11 +61,13 @@ nav.navbar {
             width: 70%;
             height: 100%;
             justify-content: flex-end;
+            padding-left: .5rem;
+
 
             div.navbar-menu-box-left {
                 @include flex-box-default;
                 justify-content: flex-end;
-                width: 35%;
+                width: 450px;
                 height: 100%;
 
                 div {
@@ -86,6 +89,10 @@ nav.navbar {
                             color: $color-light-2;
                         }
 
+                        p {
+                            margin-bottom: 0;
+                        }
+
                         i {
                             color: $color-white;
                             // font-size: 14px;
@@ -101,3 +108,5 @@ nav.navbar {
         }
     }
 }
+
+@import './medias/mediaHeaderPanel';

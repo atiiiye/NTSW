@@ -1,0 +1,116 @@
+@import './../base';
+
+
+@media (max-width:999px) {
+    .contents {
+        .descriptionBox {
+            width: 85%;
+
+            h3 {
+                font-size: 1.65rem;
+            }
+
+            span {
+                width: 75%;
+                font-size: 90%;
+                text-align: center;
+            }
+        }
+
+        form {
+            width: 85%;
+
+            .button {
+                width: 250px;
+            }
+        }
+
+        .HomeLink {
+            font-size: 90%;
+            width: 200px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contents {
+        height: max-content;
+
+        .descriptionBox {
+            span {
+                width: 85%;
+                font-size: 85%;
+            }
+        }
+
+        form {
+            .button {
+                width: 220px;
+                font-size: 95%;
+            }
+        }
+
+        .HomeLink {
+            font-size: 80%;
+            width: 180px;
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .contents {
+        .descriptionBox {
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            span {
+                width: 90%;
+                font-size: 80%;
+            }
+        }
+
+        .HomeLink {
+            width: 170px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .contents {
+        .descriptionBox {
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            span {
+                width: 90%;
+                font-size: 80%;
+            }
+        }
+
+        form {
+            .button {
+                width: 210px;
+                font-size: 90%;
+            }
+        }
+
+        .HomeLink {
+            font-size: 78%;
+            width: 160px;
+
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+}

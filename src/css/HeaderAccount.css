@@ -54,12 +54,8 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 1360px;
-  padding: 2rem;
+  max-width: 1260px;
+  padding: 0;
 }
 
 div.parent {

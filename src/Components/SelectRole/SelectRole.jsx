@@ -7,7 +7,7 @@ import styles from "./../../css/SelectRole.module.css";
 import { Input, Label, FormGroup, Button, Form } from "reactstrap";
 
 //components
-import SelectBox from './SelectBox'
+import SelectBox from "./SelectBox";
 
 //import routes
 import { NavLink, Redirect } from "react-router-dom";
@@ -21,7 +21,7 @@ const SelectRole = () => {
     event.preventDefault();
     if (options) {
       console.info("Valid Form");
-      setRedirect(true)
+      setRedirect(true);
     } else {
       console.error("Invalid Form");
     }
@@ -47,15 +47,15 @@ const SelectRole = () => {
             </span>
           </div>
           <Form onSubmit={handleSubmit}>
-        <SelectBox/>
+            <SelectBox />
             <Button className={styles.button} type="submit">
               ورود
             </Button>
           </Form>
           <NavLink to="/" className={styles.HomeLink}>
             <i className="fa fa-home" />
-          بازگشت به صفحه اصلی
-        </NavLink>
+            بازگشت به صفحه اصلی
+          </NavLink>
         </div>
       </div>
     </React.Fragment>

@@ -54,12 +54,8 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 1360px;
-  padding: 2rem;
+  max-width: 1260px;
+  padding: 0;
 }
 
 .contents {
@@ -73,20 +69,21 @@ body {
 }
 
 .contents .descriptionBox {
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  width: 75%;
 }
 
 .contents .descriptionBox h3 {
   width: 100%;
   margin-bottom: 2.5rem;
+  margin-top: .5rem;
 }
 
 .contents .descriptionBox span {
-  width: 100%;
   line-height: 1.7rem;
   text-align: right;
   color: #777;
@@ -94,7 +91,7 @@ body {
 }
 
 .contents form {
-  width: 90%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,18 +127,160 @@ body {
 }
 
 .contents .HomeLink:hover {
-  color: #000000 !important;
+  color: #000000;
 }
 
 .contents .HomeLink:focus, .contents .HomeLink:active {
   box-shadow: 0 0 0 0.2rem rgba(149, 154, 162, 0.5) !important;
   border: none !important;
   text-decoration: none;
-  color: #000000 !important;
+  color: #000000;
 }
 
 .contents .HomeLink i {
   padding: 0 .2rem;
   font-size: 20px;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir.eot");
+  src: url("./../fonts/Vazir.eot") format("embedded-opentype"), url("./../fonts/Vazir.woff2") format("woff2"), url("./../fonts/Vazir.woff") format("woff"), url("./../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Bold.eot");
+  src: url("./../fonts/Vazir-Bold.eot") format("embedded-opentype"), url("./../fonts/Vazir-Bold.woff2") format("woff2"), url("./../fonts/Vazir-Bold.woff") format("woff"), url("./../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Black.eot");
+  src: url("./../fonts/Vazir-Black.eot") format("embedded-opentype"), url("./../fonts/Vazir-Black.woff2") format("woff2"), url("./../fonts/Vazir-Black.woff") format("woff"), url("./../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Medium.eot");
+  src: url("./../fonts/Vazir-Medium.eot") format("embedded-opentype"), url("./../fonts/Vazir-Medium.woff2") format("woff2"), url("./../fonts/Vazir-Medium.woff") format("woff"), url("./../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Light.eot");
+  src: url("./../fonts/Vazir-Light.eot") format("embedded-opentype"), url("./../fonts/Vazir-Light.woff2") format("woff2"), url("./../fonts/Vazir-Light.woff") format("woff"), url("./../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Thin.eot");
+  src: url("./../fonts/Vazir-Thin.eot") format("embedded-opentype"), url("./../fonts/Vazir-Thin.woff2") format("woff2"), url("./../fonts/Vazir-Thin.woff") format("woff"), url("./../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  direction: rtl;
+  font-size: 100%;
+  font-family: Vazir;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0;
+}
+
+@media (max-width: 999px) {
+  .contents .descriptionBox {
+    width: 85%;
+  }
+  .contents .descriptionBox h3 {
+    font-size: 1.65rem;
+  }
+  .contents .descriptionBox span {
+    width: 75%;
+    font-size: 90%;
+    text-align: center;
+  }
+  .contents form {
+    width: 85%;
+  }
+  .contents form .button {
+    width: 250px;
+  }
+  .contents .HomeLink {
+    font-size: 90%;
+    width: 200px;
+  }
+  .contents .HomeLink i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contents {
+    height: max-content;
+  }
+  .contents .descriptionBox span {
+    width: 85%;
+    font-size: 85%;
+  }
+  .contents form .button {
+    width: 220px;
+    font-size: 95%;
+  }
+  .contents .HomeLink {
+    font-size: 80%;
+    width: 180px;
+  }
+  .contents .HomeLink i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contents .descriptionBox h3 {
+    font-size: 1.5rem;
+  }
+  .contents .descriptionBox span {
+    width: 90%;
+    font-size: 80%;
+  }
+  .contents .HomeLink {
+    width: 170px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contents .descriptionBox h3 {
+    font-size: 1.3rem;
+  }
+  .contents .descriptionBox span {
+    width: 90%;
+    font-size: 80%;
+  }
+  .contents form .button {
+    width: 210px;
+    font-size: 90%;
+  }
+  .contents .HomeLink {
+    font-size: 78%;
+    width: 160px;
+  }
+  .contents .HomeLink i {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=SelectRole.module.css.map */
