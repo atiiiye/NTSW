@@ -137,23 +137,22 @@ div.parent div.page-header {
   margin-left: 0;
   width: 100%;
   height: 45px;
+  padding: 0 1.5rem;
 }
 
 div.parent div.page-header div.header-buttons {
-  padding: 0 1.5rem;
-  position: absolute;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: flex-start;
-  width: 250px;
+  justify-content: space-around;
+  width: 200px;
+  margin-right: auto;
+  height: 100%;
 }
 
 div.parent div.page-header div.header-buttons div.timer-container.timerDiv {
   position: relative;
   height: 40px;
-  margin-left: 5px;
   transition: all 0.218s ease 0s;
   font-size: 80%;
   width: max-content;
@@ -169,29 +168,33 @@ div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.
 }
 
 div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.timerbox {
-  width: 50px;
+  width: 45px;
   padding: 0px 5px;
   border: 1px solid #959aa2;
   border-radius: .12rem;
   background-color: #ffffff;
-  height: 60%;
+  height: 20px;
   display: flex;
+  justify-content: center;
   flex-direction: row-reverse;
-  align-items: center;
-}
-
-div.parent div.page-header div.header-buttons div.timer-container.timerDiv span.timerbox span {
-  height: max-content;
+  align-items: flex-start;
 }
 
 div.parent div.page-header div.header-buttons div.fullscreen {
-  height: 100% !important;
-  width: max-content !important;
-  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+  width: 35px;
+}
+
+div.parent div.page-header div.header-buttons div.fullscreen:hover {
+  border-bottom: 3px solid #c70d3a;
+  box-shadow: 0 0 0.1rem 0 #959aa2;
 }
 
 div.parent div.page-header div.header-buttons div.fullscreen i {
-  color: #dadada;
-  font-size: 24px;
+  color: #959aa2;
+  font-size: 22px;
 }
 /*# sourceMappingURL=HeaderAccount.css.map */

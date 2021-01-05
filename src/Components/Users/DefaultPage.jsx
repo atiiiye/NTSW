@@ -47,7 +47,7 @@ const DefaultPage = () => {
                     dataBoxNumber={16}
                     dataBoxText={" منشا ارزهای غیر بانکی ثبت شده"}
                     icon={<i className="fa fa-credit-card" />}
-                    bgStyle={"#fddb3a"}
+                    bgStyle={"#ffce55"}
                   />
                   <DataBox
                     dataBoxNumber={120}

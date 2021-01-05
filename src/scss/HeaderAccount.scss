@@ -79,20 +79,20 @@ div.parent {
         margin-left: 0;
         width: 100%;
         height: 45px;
+        padding: 0 1.5rem;
 
         div.header-buttons {
-            padding: 0 1.5rem;
-            position: absolute;
-            left: 0;
+
             @include flex-box-default;
-            justify-content: flex-start;
-            width: 250px;
+            justify-content: space-around;
+            width: 200px;
+            margin-right: auto;
+            height: 100%;
             // top: 0;
 
             div.timer-container.timerDiv {
                 position: relative;
                 height: 40px;
-                margin-left: 5px;
                 transition: all 0.218s ease 0s;
                 // float: left;
                 // line-height: 30px;
@@ -108,30 +108,34 @@ div.parent {
                 }
 
                 span.timerbox {
-                    width: 50px;
+                    width: 45px;
                     padding: 0px 5px;
                     border: 1px solid $color-light-4;
                     border-radius: .12rem;
                     background-color: $color-white;
-                    height: 60%;
+                    height: 20px;
                     display: flex;
+                    justify-content: center;
                     flex-direction: row-reverse;
-                    align-items: center;
+                    align-items: flex-start;
 
-                    span {
-                        height: max-content;
-                    }
+                    span {}
                 }
             }
 
             div.fullscreen {
-                height: 100% !important;
-                width: max-content !important;
-                z-index: 100;
+                @include flex-box-default;
+                height: 95%;
+                width: 35px;
+
+                &:hover{
+                    border-bottom: 3px solid $color-pink-4;
+                    box-shadow: 0 0 .1rem 0 rgba($color: $color-light-4, $alpha: 1.0);
+                }
 
                 i {
-                    color: $color-light-2;
-                    font-size: 24px;
+                    color: $color-light-4;
+                    font-size: 22px;
                 }
             }
         }

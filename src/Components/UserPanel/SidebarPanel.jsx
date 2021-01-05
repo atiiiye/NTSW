@@ -8,16 +8,25 @@ import MenuItems from "./MenuItems";
 
 import { Collapse } from "reactstrap";
 
-const SidebarPanel = ({ isOpen, onEntering, onEntered, onExiting, onExited }) => {
+//context
+import {Context} from "./../../Contextes";
+
+const SidebarPanel = () => {
   return (
-    <Collapse className="mainCollapse" isOpen={isOpen}
-      onEntering={onEntering}
-      onEntered={onEntered}
-      onExiting={onExiting}
-      onExited={onExited}
-    >
-      <MenuItems />
-    </Collapse>
+    <Context.Consumer>
+      {(context) => (
+        <Collapse
+          className="mainCollapse"
+          isOpen={context.isOpen}
+          onEntering={context.onEntering}
+          onEntered={context.onEntered}
+          onExiting={context.onExiting}
+          onExited={context.onExited}
+        >
+          <MenuItems />
+        </Collapse>
+      )}
+    </Context.Consumer>
   );
 };
 

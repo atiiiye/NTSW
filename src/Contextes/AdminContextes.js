@@ -14,30 +14,33 @@ const AdminContextes = (props) => {
     }
 
     const onEntering = () => {
-        let pageBodyWrapper = document.querySelector(".pageBodyWrapper");
-        pageBodyWrapper.style.width = "80%";
+        let window = document.querySelector(".window");
+        // window.style.width = "Calc(100%-350px)";
 
-        console.log("Opening...");
-    }
+        // console.log("Opening...");
+    };
 
     const onEntered = () => {
-        let pageBodyWrapper = document.querySelector(".pageBodyWrapper");
-        pageBodyWrapper.style.width = "80%";
+        let window = document.querySelector(".window");
+        // window.style.width = "Calc(100%-350px)";
+        // console.log("Opened...");
+    };
 
-        console.log("Opened...");
-    }
     const onExiting = () => {
-        let pageBodyWrapper = document.querySelector(".pageBodyWrapper");
-        pageBodyWrapper.style.width = "100%";
+        let window = document.querySelector(".window");
+        // window.style.width = "100%";
+        // window.style.transform =" translate(-100%,0)";
 
-        console.log("Closing...");
-    }
+        // console.log("Closing...");
+    };
+
     const onExited = () => {
-        let pageBodyWrapper = document.querySelector(".pageBodyWrapper");
-        pageBodyWrapper.style.width = "100%";
+        let window = document.querySelector(".window");
+        // window.style.width = "100%";
+        // window.style.transform = " translate(-100%,0)";
 
-        console.log("Closed...");
-    }
+        // console.log("Closed...");
+    };
 
     return (
         <Context.Provider
@@ -51,7 +54,6 @@ const AdminContextes = (props) => {
                 onExited: () => onExited(),
             }}>
             {props.children}
-
         </Context.Provider>
     );
 }
