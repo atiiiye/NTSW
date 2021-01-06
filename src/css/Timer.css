@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir.eot");
+  src: url("./../fonts/Vazir.eot") format("embedded-opentype"), url("./../fonts/Vazir.woff2") format("woff2"), url("./../fonts/Vazir.woff") format("woff"), url("./../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Bold.eot");
+  src: url("./../fonts/Vazir-Bold.eot") format("embedded-opentype"), url("./../fonts/Vazir-Bold.woff2") format("woff2"), url("./../fonts/Vazir-Bold.woff") format("woff"), url("./../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Black.eot");
+  src: url("./../fonts/Vazir-Black.eot") format("embedded-opentype"), url("./../fonts/Vazir-Black.woff2") format("woff2"), url("./../fonts/Vazir-Black.woff") format("woff"), url("./../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Medium.eot");
+  src: url("./../fonts/Vazir-Medium.eot") format("embedded-opentype"), url("./../fonts/Vazir-Medium.woff2") format("woff2"), url("./../fonts/Vazir-Medium.woff") format("woff"), url("./../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Light.eot");
+  src: url("./../fonts/Vazir-Light.eot") format("embedded-opentype"), url("./../fonts/Vazir-Light.woff2") format("woff2"), url("./../fonts/Vazir-Light.woff") format("woff"), url("./../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Thin.eot");
+  src: url("./../fonts/Vazir-Thin.eot") format("embedded-opentype"), url("./../fonts/Vazir-Thin.woff2") format("woff2"), url("./../fonts/Vazir-Thin.woff") format("woff"), url("./../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  direction: rtl;
+  font-size: 100%;
+  font-family: Vazir;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0;
+}
+
+div.timer-container.timerDiv {
+  position: relative;
+  height: 40px;
+  transition: all 0.218s ease 0s;
+  font-size: 80%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.timer-container.timerDiv span.text-time {
+  width: max-content;
+  color: #959aa2;
+  margin-left: .5rem;
+}
+
+div.timer-container.timerDiv span.timerbox {
+  width: 45px;
+  padding: 0px 5px;
+  border: 1px solid #959aa2;
+  border-radius: .12rem;
+  background-color: #ffffff;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+/*# sourceMappingURL=Timer.css.map */

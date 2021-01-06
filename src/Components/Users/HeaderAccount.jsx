@@ -23,7 +23,7 @@ const HeaderAccount = () => {
       {(context) => (
         <div className="parent">
           <Navbar className="user-header">
-            <div className="user-header-left">
+            <div className="user-header-left col-12 col-md-6">
               <Breadcrumb className="breadcrumb">
                 <BreadcrumbItem tag="a" href="/">
                   خانه
@@ -36,13 +36,13 @@ const HeaderAccount = () => {
                 </BreadcrumbItem>
               </Breadcrumb>
             </div>
-            <div className="user-header-right">
+            <div className="user-header-right col-12 col-md-6">
               <SelectBox />
             </div>
           </Navbar>
           <div className="page-header">
             <div className="header-buttons">
-             <Timer/>
+              <Timer />
               <div className="fullscreen" onClick={context.toggle}>
                 <i className="material-icons">&#xe5d0;</i>
               </div>

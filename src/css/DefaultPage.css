@@ -171,6 +171,8 @@ div.window div.parent-content div.row div#alertBoxForSupport div.well {
   color: #000000;
   position: relative;
   width: 93%;
+  padding-right: .5rem;
+  padding-left: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;

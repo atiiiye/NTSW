@@ -1,0 +1,34 @@
+@import "./base";
+
+div.timer-container.timerDiv {
+    position: relative;
+    height: 40px;
+    transition: all 0.218s ease 0s;
+    // float: left;
+    // line-height: 30px;
+    font-size: 80%;
+    width: max-content;
+    @include flex-box-default;
+
+    span.text-time {
+        width: max-content;
+        color: $color-light-4;
+        margin-left: .5rem;
+
+    }
+
+    span.timerbox {
+        width: 45px;
+        padding: 0px 5px;
+        border: 1px solid $color-light-4;
+        border-radius: .12rem;
+        background-color: $color-white;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+
+        span {}
+    }
+}

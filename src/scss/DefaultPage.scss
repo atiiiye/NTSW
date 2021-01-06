@@ -106,6 +106,8 @@ div.window {
                     color: $color-black;
                     position: relative;
                     width: 93%;
+                    padding-right: .5rem;
+                    padding-left: .5rem;
                     @include flex-box-column;
                     height: 100%;
 

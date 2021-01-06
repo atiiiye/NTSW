@@ -12,18 +12,18 @@ div.parent {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 1.5rem;
+        padding: 1rem;
         // border-bottom: 1px solid $color-light-2;
 
         div.user-header-left {
             height: 100%;
             width: 55%;
+            padding: 0;
 
             nav.breadcrumb {
                 background-color: transparent;
                 margin-bottom: 0;
-                padding-bottom: 0;
-                padding-top: 0;
+                padding: 0;
                 width: 100%;
                 @include flex-box-default;
                 justify-content: flex-start;
@@ -46,6 +46,7 @@ div.parent {
         div.user-header-right {
             width: 45%;
             height: 100%;
+            padding: 0;
 
             div.form-group {
                 @include flex-box-default;
@@ -90,38 +91,7 @@ div.parent {
             height: 100%;
             // top: 0;
 
-            div.timer-container.timerDiv {
-                position: relative;
-                height: 40px;
-                transition: all 0.218s ease 0s;
-                // float: left;
-                // line-height: 30px;
-                font-size: 80%;
-                width: max-content;
-                @include flex-box-default;
 
-                span.text-time {
-                    width: max-content;
-                    color: $color-light-4;
-                    margin-left: .5rem;
-
-                }
-
-                span.timerbox {
-                    width: 45px;
-                    padding: 0px 5px;
-                    border: 1px solid $color-light-4;
-                    border-radius: .12rem;
-                    background-color: $color-white;
-                    height: 20px;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: row-reverse;
-                    align-items: flex-start;
-
-                    span {}
-                }
-            }
 
             div.fullscreen {
                 @include flex-box-default;
@@ -141,6 +111,6 @@ div.parent {
         }
 
     }
-
-
 }
+
+@import './medias/mediaHeaderAccount';

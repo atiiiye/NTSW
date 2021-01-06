@@ -1,0 +1,76 @@
+@import './../base';
+
+
+@media (max-width:1200px) {
+    div.parent {
+        position: relative;
+        width: 100%;
+
+        nav.user-header.navbar {
+            width: 100%;
+            height: max-content;
+            padding: 1rem ;
+
+            div.user-header-left {
+                height: 100%;
+                width: 55%;
+
+                nav.breadcrumb {
+                    margin-bottom: 0;
+                    width: 100%;
+
+                    ol.breadcrumb {
+                        width: max-content;
+                        margin: 0;
+
+                        a.breadcrumb-item {
+                            font-size: 90%;
+                        }
+                    }
+                }
+            }
+
+            div.user-header-right {
+                width: 45%;
+                height: 100%;
+
+                div.form-group {
+                    width: 100%;
+
+                    label {
+                        font-size: 85%;
+                        margin-bottom: 0;
+                        margin-left: .5rem;
+                    }
+
+                    select {
+                        width: 60%;
+                        font-size: 90%;
+                    }
+                }
+            }
+        }
+
+        div.page-header {
+            margin-left: 0;
+            width: 100%;
+            height: 45px;
+            padding: 0 1.5rem;
+
+            div.header-buttons {
+                width: 200px;
+                height: 100%;
+
+                div.fullscreen {
+                    height: 95%;
+                    width: 35px;
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+        }
+    }
+}
